@@ -1,0 +1,37 @@
+# Logfile created on 2013-12-22 19:56:50 -0600 by logger.rb/1.2.8
+[0;97;49mStarted GET "/" at 2013-12-22 19:57:16 -0600[0m
+Detecting locale EN
+Found page "Home page" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 140.4ms
+
+[0m
+[0;97;49mStarted GET "/" at 2014-01-13 17:59:52 -0600[0m
+Detecting locale EN
+Found page "Home page" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 109.7ms
+
+[0m
+[0;97;49mStarted GET "/" at 2014-01-13 21:25:02 -0600[0m
+Detecting locale EN
+Found page "Home page" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 104.6ms
+
+[0m
+* Reloaded "site", "content_types", "pages", "snippets", "content_entries", "translations" at 2014-01-13 21:31:15 -0600
+* Reloaded "site", "content_types", "pages", "snippets", "content_entries", "translations" at 2014-01-13 21:33:54 -0600
+Use the force option in order to force your locale settings.
+      locales => The previous default locale can not be removed right away.
+Use the force option in order to force your locale settings.
+      locales => The previous default locale can not be removed right away.
+      locales => The previous default locale can not be removed right away.
+[0;31;49m      local_path => ya está en uso
+[0m
+      locales => The previous default locale can not be removed right away.
+[0;31;49m      local_path => ya está en uso
+[0m
+      locales => The previous default locale can not be removed right away.
+[0;31;49m      local_path => ya está en uso
+[0m

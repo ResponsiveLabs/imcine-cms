@@ -1,0 +1,457 @@
+---
+title: Página de inicio
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 0
+---
+<!DOCTYPE html>
+<html class="">
+<head>
+  <meta charset=utf-8 />
+  <title>Instituto Mexicano de Cinematografía</title>
+  
+  {{ 'style-1024.css' | stylesheet_tag }}
+  {{ 'furatto.css' | stylesheet_tag }}
+  {{ 'font-awesome.css' | stylesheet_tag }}
+  {{ 'normalize.css' | stylesheet_tag }}
+
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"> 
+
+</head>
+<body>
+
+<div class="panels ">
+  <div class="panel panel-left">
+  </div>
+</div>
+
+<div class="panel-content">
+  <div class="all-site">
+    <div class="row header" id="header">
+      <div class="container-center" style="padding-top: 35px;">
+        <div class="col-12">
+          <div class="pull-left" id="left">
+            <img src="{{ 'logo-sep.jpg' | theme_image_url }}" class="img">
+          </div>
+
+          <div class="pull-right">
+            <img src="{{ 'logo-imcine.jpg' | theme_image_url }}" class="img">
+          </div>
+        </div>
+
+        <div class="row navigation">
+          <div class="col-9" id="main-navigation">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="container">
+                  <a href="#menu" class="menu-trigger meteocon" data-meteocon="M" data-toggle="panel" data-target="#menu"></a>
+                  <div class="nav-collapse collapse">
+                    <nav id="menu">
+                      <ul class="nav">
+                        <li><a href="">IMCINE</a></li>
+                        <li id="menu-text"><a href="#">ESTÍMULOS Y APOYOS</a></li>
+                        <li><a id="cine-nacional" href="#">CINE NACIONAL</a></li>
+                        <li id="menu-text"><a href="#">COMUNICACIÓN SOCIAL</a></li>
+                        <li><a href="#">TRANSPARENCIA</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3" id="search">
+            <div class="pull-right">
+              <img src="{{ 'search.jpg' | theme_image_url }}" class="img">
+            </div>
+            <form action="" method="get" accept-charset="utf-8" class="search-navbar-form pull-right">
+              <input type="text" name="" id="search-input" value="" placeholder="gob.mx" class="search-text-input">
+            </form>
+          </div> <!--finall search-->
+
+        </div><!--finall navigation-->
+        <div class="pull-right" id="idioma">
+          <a><img src="{{ 'Amenos.png' | theme_image_url }}" class="img"></a>
+          <a><img src="{{ 'Amas.png' | theme_image_url }}" class="img"></a>
+          <a><img src="{{ 'ES.png' | theme_image_url }}" class="img"></a>
+          <a><img src="{{ 'EN.png' | theme_image_url }}" class="img"></a>
+        </div>
+      </div><!--finall container-center-->
+    </div><!--finall header-->
+
+    <div class="container-center">
+      <div class="row">
+        <div class="col-12">
+          <div class="slider1">
+            <ul id="slider2">
+              <li>
+                <img src="{{ 'img_slide_cinemaM.jpg' | theme_image_url }}" class="img">
+                <div class="bx-caption">
+                  <span><strong>MIRADAS MÚLTIPLES</strong><br>
+                  Una inmersión en las imágenes más simbólicas y claves de las películas mexicanas fotografiadas por Gabriel Figueroa, acompañadas por las voces en off de los 40 cinematógrafos más importantes del mundo.</span>
+                  <div id="mas-caption"><img src="{{ 'icono-mas.png' | theme_image_url }}" class="img"><a href="#">MÁS</a></div>
+                </div> 
+              </li>
+              <li>
+                <img src="{{ 'img_slide_cinesecuencias.jpg' | theme_image_url }}" class="img">
+                <div class="bx-caption">
+                  <span><strong>MIRADAS MÚLTIPLES</strong><br>
+                  Una inmersión en las imágenes más simbólicas y claves de las películas mexicanas fotografiadas por Gabriel Figueroa, acompañadas por las voces en off de los 40 cinematógrafos más importantes del mundo.</span>
+                  <div id="mas-caption"><img src="{{ 'icono-mas.png' | theme_image_url }}" class="img"><a href="#">MÁS</a></div>
+                </div> 
+              </li>
+              <li>
+                <img src="{{ 'img_slide_cursos.jpg' | theme_image_url }}" class="img">
+                <div class="bx-caption">
+                  <span><strong>MIRADAS MÚLTIPLES</strong><br>
+                  Una inmersión en las imágenes más simbólicas y claves de las películas mexicanas fotografiadas por Gabriel Figueroa, acompañadas por las voces en off de los 40 cinematógrafos más importantes del mundo.</span>
+                  <div id="mas-caption"><img src="{{ 'icono-mas.png' | theme_image_url }}" class="img"><a href="#">MÁS</a></div>
+                </div> 
+              </li>
+              <li>
+                <img src="{{ 'img_slide_estadisticas.jpg' | theme_image_url }}" class="img">
+                <div class="bx-caption">
+                  <span><strong>MIRADAS MÚLTIPLES</strong><br>
+                  Una inmersión en las imágenes más simbólicas y claves de las películas mexicanas fotografiadas por Gabriel Figueroa, acompañadas por las voces en off de los 40 cinematógrafos más importantes del mundo.</span>
+                  <div id="mas-caption"><img src="{{ 'icono-mas.png' | theme_image_url }}" class="img"><a href="#">MÁS</a></div>
+                </div> 
+              </li>
+            </ul>
+
+            <div id="bx-pager2">
+              <p>ESTRENOS</p>
+              <a data-slide-index="0" href="#">1</a>
+              <a data-slide-index="1" href="#">2</a>
+              <a data-slide-index="2" href="#">3</a>
+              <a data-slide-index="3" href="#">4</a>
+            </div>                 
+          </div><!--finall slider1-->
+
+          <div class="row content2">
+            <div class="row col-4" id="cine">
+              <div class="cine">
+                <div class="over-cont-cine">
+                  <a href="#" id="text-cine"><p class="text-center">CURSOS <br>Y TALLERES</p></a>
+                </div>
+              </div> 
+            </div>
+            <div class="row col-4" id="cine">
+              <div class="cine">
+                <div class="over-cont-cine">
+                  <a href="#"><p class="text-center">OBSERVATORIO<br> Y ESTADÍSTICAS</p></a>
+                </div>
+              </div> 
+            </div>
+            <div class="row col-4" id="cine">
+              <div class="cine">
+                <div class="over-cont-cine">
+                  <a href="#"><p class="text-center">CINEMA<br> MÉXICO</p></a>
+                </div>
+              </div> 
+            </div>
+            <div class="row col-4" id="cine">
+              <div class="cine">
+                <div class="over-cont-cine">
+                  <a href="#"><p class="text-center" id="one-line">COMEFILM</p></a>
+                </div>
+              </div> 
+            </div>
+            <div class="row col-4" id="cine">
+              <div class="cine">
+                <div class="over-cont-cine">
+                  <a href="#"><p class="text-center">CINE EN TU<br> COMUNIDAD</p></a>
+                </div>
+              </div> 
+            </div>
+            <div class="row col-4" id="cine">
+              <div class="cine">
+                <div class="over-cont-cine">
+                  <a href="#"><p class="text-center" id="one-line">CINESECUENCIAS</p></a>
+                </div>
+              </div> 
+            </div>
+          </div><!--finall content2-->
+        </div><!--finall col-12-->
+
+        <div class="row col-9" id="main-content">
+          <div class="row cartelera1">
+            <h4>CARTELERA DE LA SEMANA</h4>
+            <a href="#"><p class="text-right" id="mas">MÁS</p></a>
+
+            <div class="prev"><img src="{{ 'flecha-carrusel-i.png' | theme_image_url }}" class="img"></div>
+            <div class="next"><img src="{{ 'flecha-carrusel-d.png' | theme_image_url }}" class="img"></div>
+            
+            <div class="anyClass">                  
+                <ul class="carousel-slider">
+                    <li>
+                    	<img src="{{ 'movie1.jpg' | theme_image_url }}" class="img">
+                    	<div class="caption-wrapper">
+                    		<h5>LOS FABULOSOS 7</h5>
+                    		<h6>Fernando Sariñana</h6>
+                    		<h6>2013</h6>
+                    	</div>
+                    </li>
+                    <li>
+                    	<img src="{{ 'movie2.jpg' | theme_image_url }}" class="img">
+                    	<div class="caption-wrapper">
+                    		<h5>ACTORES, S.A.</h5>
+                    		<h6>Carlos Gonzáles Sariñana</h6>
+                    		<h6>2008</h6>
+                    	</div>
+                    </li>
+                    <li>
+                    	<img src="{{ 'movie3.jpg' | theme_image_url }}" class="img">
+                    	<div class="caption-wrapper">
+                    		<h5>EL SECRETO DEL MEDALLÓN DE JADE</h5>
+                    		<h6>Rodolfo Guzmán<br>Leopoldo Aguilar</h6>
+                    		<h6>2011</h6>
+                    	</div>
+                    </li>
+                </ul>
+            </div>
+          </div><!--finall cartelera-->
+
+          <div class="row festivales">
+            <h4>FESTIVALES</h4>
+            <a href="#"><p class="text-right" id="ver-todo">VER TODO</p></a>
+            <div class=" row col-3">
+              <div class="thumbnail">
+               <img src="{{ 'cutout.jpg' | theme_image_url }}" class="img">
+                <h6>CUTOUT FEST 2013</h6>
+                <p class="light">QUERÉTARO, MÉXICO</p>
+                <a href="#"><p class="text-left">MÁS INFO</p></a>
+              </div><!--finall thumbnail-->
+            </div><!--finall row col-3-->
+            <div class="row col-3">
+              <div class="thumbnail">
+                <img src="{{ 'zanate.jpg' | theme_image_url }}" class="img">
+                <h6>6° FESTIVAL <br>ZANATE DE CINE<br> Y VIDEO DOCU...</h6>
+                <p class="light">COLIMA, COLIMA</p>
+                <a href="#"><p class="text-left">MÁS INFO</p></a>
+              </div><!--finall thumbnail-->
+            </div><!--finall row col-3-->
+            <div class="row col-3">
+              <div class="thumbnail">
+                <img src="{{ 'iberoamericano.jpg' | theme_image_url }}" class="img">
+                <h6>39° FESTIVAL DE<br> CINE IBEROAMERI- <br>CANO DE HUELVA.</h6>
+                <p class="light">HUELVA, ESPAÑA</p>
+                <a href="#"><p class="text-left">MÁS INFO</p></a>
+              </div><!--finall thumbnail-->
+            </div><!--finall row col-3-->
+            <div class="row col-3">
+              <div class="thumbnail">
+                <img src="{{ 'memoria.jpg' | theme_image_url }}" class="img">
+                <h6>7° FESTIVAL DE LA<br> MEMORIA DOCU- <br>MENTAL IBEROA...</h6>
+                <p class="light">CUERNAVACA, MORELOS. <br>MÉXICO</p>
+                <a><p class="text-left">MÁS INFO</p></a>
+              </div><!--finall thumbnail-->
+            </div><!--finall row col-3-->
+            <div class="row-f1">
+              <h4>PRESENCIA IMCINE</h4>
+            </div>
+            <div class="row-f2">
+              <div class="footer-festivales-1">
+                <h4><a href="#">PELÍCULAS</a> | </h4>
+              </div>
+              <div class="footer-festivales-2">
+                <a href="#"><h4>VIDEOGALERÍA</h4></a>
+              </div>
+            </div>
+          </div><!--finall festivales-->
+
+          <div class="row slider2">
+            <h4>NOTICIAS</h4>
+            <ul id="slider1">
+              <li>
+                <img src="{{ 'slider3.jpg' | theme_image_url }}" class="img">
+                 <div class="bx-wrapper bx-caption" id="slider3">
+                  <h5>HAY UNA REAPROXIMACIÓN DEL CINE MEXICANO CON EL ESPECTADOR</h5>
+                  <p>El titular del Imcine habló sobre el éxito reciente de la cinematografía nacional duranre<br> la ponencia "Los retos...</p>
+                  <div id="ver-caption"><a href="#">VER</a></div>
+                </div> 
+              </li>
+              <li>
+  			       <img src="{{ 'slider3.jpg' | theme_image_url }}" class="img">
+                <div class="bx-wrapper bx-caption" id="slider3">
+                  <h5>HAY UNA REAPROXIMACIÓN DEL CINE MEXICANO CON EL ESPECTADOR</h5>
+                  <p>El titular del Imcine habló sobre el éxito reciente de la cinematografía nacional duranre<br> la ponencia "Los retos...</p>
+                  <div id="ver-caption"><a href="#">VER</a></div>
+                </div> 
+              </li>
+              <li><img src="{{ 'slider3.jpg' | theme_image_url }}" class="img">
+                <div class="bx-wrapper bx-caption" id="slider3">
+                  <h5>HAY UNA REAPROXIMACIÓN DEL CINE MEXICANO CON EL ESPECTADOR</h5>
+                  <p>El titular del Imcine habló sobre el éxito reciente de la cinematografía nacional duranre<br> la ponencia "Los retos...</p>
+                  <div id="ver-caption"><a href="#">VER</a></div>
+                </div> 
+              </li>
+              <li><img src="{{ 'slider3.jpg' | theme_image_url }}" class="img">
+                <div class="bx-wrapper bx-caption" id="slider3">
+                  <h5>HAY UNA REAPROXIMACIÓN DEL CINE MEXICANO CON EL ESPECTADOR</h5>
+                  <p>El titular del Imcine habló sobre el éxito reciente de la cinematografía nacional duranre<br> la ponencia "Los retos...</p>
+                  <div id="ver-caption"><a href="#">VER</a></div>
+                </div> 
+              </li>
+            </ul>
+
+            <div id="bx-pager1">
+              <a data-slide-index="0" href="#">1</a>
+              <a data-slide-index="1" href="#">2</a>
+              <a data-slide-index="2" href="#">3</a>
+              <a data-slide-index="3" href="#">4</a>
+            </div>                         
+          </div><!--finall slider2-->
+        </div><!--finall col-9-->
+
+        <div class="row col-3" id="sidebar-right">
+          <div class="convocatorias">
+            <div class="cont-convocatorias">
+              <div class="over-last-div"></div>
+              <p class="text-center" id="title-convo">CONVOCATORIAS</p>
+            </div>
+            <div class="borde-convocatorias">
+              <img src="{{ 'bullet-cine-convocatorias.png' | theme_image_url }}" class="img">
+              <p><a href="#">Convocatoria del 64° Festival Internacional del Cine de Berlín</a></p>
+              <p class="text-convocatorias">Fecha límite: 20 de diciembre.</p>
+            </div>
+            <div class="borde-convocatorias">
+              <img src="{{ 'bullet-cine-convocatorias.png' | theme_image_url }}" class="img">
+              <p><a href="#">Convocatoria del Taller de Escritura de Series Dramatizadas para Televisión</a></p>
+              <p class="text-convocatorias">Fecha límite para enviar documentación: 17 de enero 2014.</p>
+            </div>
+            <div class="borde-convocatorias" id="without-border">
+              <img src="{{ 'bullet-cine-convocatorias.png' | theme_image_url }}" class="img">
+              <p><a href="#">Convocatoria de Talents Guadalajara</a></p>
+              <p class="text-convocatorias">Para escritores, cineastas y músicos.</p>
+            </div>
+          </div><!--finall convocatorias-->
+
+
+
+          <div class="twitter">
+            <a class="twitter-timeline" href="https://twitter.com/IMCINE" data-widget-id="408997573496545280">Tweets por @IMCINE</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            </script>
+          </div><!--finall twitter-->
+
+          <div class="social-icons">
+            <h6>SÍGUENOS:</h6>
+            <ul id="social">
+              <li><a href="https://www.facebook.com/IMCINE" target="_blank"><img src="{{ 'facebook.jpg' | theme_image_url }}" class="img"></a></li>
+              <li><a href="#"><img src="{{ 'googleplus.jpg' | theme_image_url }}" class="img"></a></li>
+              <li><a href="https://www.youtube.com/user/IMCINEChannel" target="_blank"><img src="{{ 'youtube.jpg' | theme_image_url }}" class="img"></a></li>
+              <li><a href="#"><img src="{{ 'instagram.jpg' | theme_image_url }}" class="img"></a></li>
+            </ul>
+          </div>
+
+          <div class="banneer">
+            <img src="{{ 'banneer.png' | theme_image_url }}" class="img">
+          </div>
+
+          <div class="cont-thumb">
+            <img src="{{ 'banner-mexico.png' | theme_image_url }}" class="img">
+          </div>
+
+          <div class="cont-thumb">
+   		  <img src="{{ 'banner-ifai.png' | theme_image_url }}" class="img">
+          </div>
+
+          <div class="cont-thumb">
+            <img src="{{ 'banner-sitios-de-interes.png' | theme_image_url }}" class="img">
+          </div>
+
+
+        </div><!--finall col-3-->
+      </div><!--finall -row-->
+    </div><!--finall container-center-->
+
+    <footer class="row footer">
+      <div class="row col-12" id="menu-footer">
+        <center><ul class="menu-footer">
+          <li><h4><a href="#">DIRECTORIO</a></h4></li>
+          <li class="divider"></li>
+          <li><h6><a href="#">CONTACTO</a></h6></li>
+          <li class="divider"></li>
+          <li><h6><a href="#">MAPA DEL SITIO</a></h6></li>
+          <li class="divider"></li>
+          <li><h6><a href="#">SITIOS DE INTERÉS</a></h6></li>
+          <li class="divider"></li>
+          <li><h6><a href="#">RESPONSABLES DEL SITIO</a></h6></li>
+          <li class="divider"></li>
+          <li><h6><a href="#">PREGUNTAS FRECUENTES</a></h6></li>
+        </ul></center>
+      </div>
+
+      <div class="row col-12" >
+        <div>
+          <img src="{{ 'logos-footer.jpg' | theme_image_url }}" class="img">
+        </div>
+      </div>
+
+      <div class="row col-12">
+  	   <div class="copyright">
+         <center><h6>© 2010-2013. Instituto Mexicano de Cinematografía - Av. Insurgentes Sur No. 674<br>Colonia del Valle. Delegación Benito Juárez. México D.F. 03100. Teléfono 5448 5300</h6></center>
+  	    </div>
+      </div>
+    </footer><!--finall footer-->
+  </div><!--final all-site-->
+</div><!--finall panel-content-->
+
+<script TYPE="text/javascript" src="{{ 'jquery.js' | javascript_url }}"></script>
+<script TYPE="text/javascript" src="{{ 'furatto.min.js' | javascript_url }}"></script>
+<script TYPE="text/javascript" src="{{ 'jquery.bxslider.js' | javascript_url }}"></script>
+<script TYPE="text/javascript" src="{{ 'jcarousellite.js' | javascript_url }}"></script>
+
+<script>
+
+$(document).ready(function(){
+
+	$('#slider1').bxSlider({
+	  mode: 'fade',
+	  auto: true,
+	  autoControls: true,
+	  pause: 2000,
+	  pagerCustom: '#bx-pager1'
+	});
+
+	$('#slider2').bxSlider({
+	  auto: true,
+	  autoControls: true,
+	  pause: 3000,
+	  slideMargin: 20,
+	  captions: true,
+	  pagerCustom: '#bx-pager2'
+	});
+
+	$(function() {
+	    $(".anyClass").jCarouselLite({
+	      btnNext: ".next",
+	      btnPrev: ".prev"
+	    });
+	});
+
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+<!-- Termina Página -->
+
+Contenido de la página de inicio
+{% for convocatoria in contents.convocatoria %}
+    <div class="convocatoria">
+        <h3>{{ convocatoria.nombre }}</h3>
+      <p>{{ convocatoria.fecha }}</p>
+    </div>
+{% endfor %}
+{% include 'footer' %}

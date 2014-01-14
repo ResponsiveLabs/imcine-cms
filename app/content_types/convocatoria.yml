@@ -1,0 +1,39 @@
+---
+name: Convocatoria
+description: Convocatorias de IMCINE
+slug: convocatoria
+label_field_name: nombre
+order_by: fecha
+order_direction: asc
+fields:
+- nombre:
+    label: Nombre
+    type: string
+    required: true
+    unique: false
+    localized: false
+- fecha:
+    label: Fecha
+    type: date
+    required: true
+    unique: false
+    localized: false
+- imagen:
+    label: Imagen
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento:
+    label: Documento
+    type: file
+    required: false
+    unique: false
+    localized: false
+- descripcion:
+    label: Descripción
+    type: text
+    required: false
+    unique: false
+    localized: false
+    text_formatting: html

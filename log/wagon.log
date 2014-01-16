@@ -39,3 +39,17 @@ Use the force option in order to force your locale settings.
       locales => The previous default locale can not be removed right away.
 [0;31;49m      local_path => ya está en uso
 [0m
+Unknown locale in the '404.en.liquid' file.
+Unknown locale in the 'index.en.liquid' file.
+[0;97;49mStarted GET "/" at 2014-01-15 19:15:15 -0600[0m
+Detecting locale ES
+Found page "Home page" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 104.5ms
+
+[0m
+Unknown locale in the '404.en.liquid' file.
+Unknown locale in the 'index.en.liquid' file.
+Use the force option in order to force your locale settings.
+[0;31;49m      local_path => is already taken
+[0m

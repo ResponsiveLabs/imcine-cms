@@ -35,3 +35,7 @@ Use the force option in order to force your locale settings.
       locales => The previous default locale can not be removed right away.
 [0;31;49m      local_path => ya está en uso
 [0m
+Use the force option in order to force your locale settings.
+      locales => The previous default locale can not be removed right away.
+[0;31;49m      local_path => ya está en uso
+[0m

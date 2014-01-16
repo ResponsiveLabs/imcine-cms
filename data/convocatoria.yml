@@ -3,11 +3,8 @@
     _slug: convocatoria-1
     seo_title: Convocatoria 1
     fecha: 16/01/2014
-    imagen: /samples/convocatoria/convocatoria-1/kuruwi-slider.jpg
-    documento: /samples/convocatoria/convocatoria-1/Kuruwi_-_Tabla_Comparativa_Competencia.pdf
     descripcion: <p>Convocatoria del nuevo proyecto de IMCINE</p>
 - Convocatoria 2:
     _slug: convocatoria-2
     fecha: 31/01/2014
-    imagen: /samples/convocatoria/convocatoria-2/logo.png
     descripcion: <p>Segunda convocatoria</p>

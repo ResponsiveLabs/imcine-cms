@@ -1,0 +1,39 @@
+---
+name: Videos
+description: Videos
+slug: videos
+label_field_name: video
+order_by: created_at
+order_direction: asc
+fields:
+- video:
+    label: Video
+    type: file
+    required: true
+    unique: false
+    localized: false
+- titulo:
+    label: Título
+    type: string
+    required: false
+    unique: false
+    localized: false
+- descripcion:
+    label: Descripción
+    type: text
+    required: false
+    unique: false
+    localized: false
+    text_formatting: html
+- fuente:
+    label: Fuente
+    type: string
+    required: false
+    unique: false
+    localized: false
+- youtube_url:
+    label: YouTube URL
+    type: string
+    required: false
+    unique: false
+    localized: false

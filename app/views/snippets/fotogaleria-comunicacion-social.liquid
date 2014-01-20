@@ -1,0 +1,17 @@
+{% for galeria in contents.galerias limit:1 %}
+
+<div class="row col-12 info-article">
+  <h6><a href="{{ galeria._permalink }}">{{ galeria.titulo }}</a></h6>
+  <div class="col-3">
+    <p>{{ galeria.descripcion }}</p>
+  </div>
+  <div class="col-6">
+    <img src="{{ galeria.imagen_destacada_url }}" class="img">
+  </div>
+  <div class="col-3">
+    {% for foto in galeria.fotos limit:2 %}
+    	<img src="{{ foto.imagen_url }}" class="img" id="img2">
+    {% endfor %}
+  </div>
+</div><!--finall row col-12 info-article-->
+{% endfor %}

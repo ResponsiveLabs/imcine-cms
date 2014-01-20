@@ -1,0 +1,24 @@
+---
+- ? url: /samples/fotos/artesdocs-2/ARTESDOCS2.jpg
+  : _slug: artesdocs-2
+    titulo: ARTESDOCS 2
+    descripcion: ''
+    fuente: IMCINE
+    noticias: []
+    galerias:
+    - artes-dot-docs-2do-encuentro-internacional-de-documentales-de-artes
+- ? url: /samples/fotos/artesdocs-1/ARTESDOCS1.jpg
+  : _slug: artesdocs-1
+    titulo: ARTESDOCS 1
+    descripcion: ''
+    fuente: IMCINE
+    noticias: []
+    galerias:
+    - artes-dot-docs-2do-encuentro-internacional-de-documentales-de-artes
+- ? url: /samples/fotos/imcine/imcine.jpg
+  : _slug: imcine
+    titulo: Conaculta - Imcine
+    descripcion: <p>Logotipos de Conaculta e Imcine</p>
+    fuente: IMCINE
+    noticias: []
+    galerias: []

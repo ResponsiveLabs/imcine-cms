@@ -53,3 +53,7 @@ Unknown locale in the 'index.en.liquid' file.
 Use the force option in order to force your locale settings.
 [0;31;49m      local_path => is already taken
 [0m
+Use the force option in order to force your locale settings.
+      locales => The previous default locale can not be removed right away.
+Use the force option in order to force your locale settings.
+      locales => The previous default locale can not be removed right away.

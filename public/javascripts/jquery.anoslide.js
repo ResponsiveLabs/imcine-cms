@@ -7,6 +7,7 @@
 */
 
 
+
 (function () 
 {
     var anoSlide = function(element, options) 

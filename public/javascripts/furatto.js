@@ -12,6 +12,7 @@
 /*global define, module, ender*/
 
 
+
 (function(win, doc) {
     'use strict';
     var Snap = Snap || function(userOpts) {

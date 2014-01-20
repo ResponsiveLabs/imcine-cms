@@ -1,4 +1,6 @@
 ---
-name: IMCINE - DEMO
+name: Instituto Mexicano de Cinematografía
 locales: [en]
+subdomain: imcine-staging
+domains: [imcine-staging.herokuapp.com]
 timezone: Mexico City

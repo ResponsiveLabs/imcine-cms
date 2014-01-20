@@ -1,0 +1,49 @@
+<div class="row header" id="header">
+ <div class="container-center" style="padding-top: 35px;">
+    <div class="col-12">
+      <div class="pull-left">
+        <a href="/"><img src="{{ 'logo-sep.jpg' | theme_image_url }}" class="img"></a>
+      </div>
+      
+      <div class="pull-right">
+        <img src="{{ 'logo-imcine.jpg' | theme_image_url }}" class="img">
+      </div>
+    </div>
+    
+    <div class="row navigation">
+      <div class="col-9" id="main-navigation">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <a href="#menu" class="menu-trigger meteocon" data-meteocon="M" data-toggle="panel" data-target="#menu"></a>
+              <div class="nav-collapse collapse">
+                <nav id="menu">
+                  <ul class="nav">
+                  	<!-- Menú NAV -->
+                  	{% nav 'index', depth: 1, no_wrapper: true, exclude: nil, icon: false, active_class: active-menu %}
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-3" id="search">
+        <div class="pull-right">
+          <img src="{{ 'search.jpg' | theme_image_url }}" class="img">
+        </div>
+        <form action="" method="get" accept-charset="utf-8" class="search-navbar-form pull-right">
+          <input type="text" name="" id="search-input" value="" placeholder="gob.mx" class="search-text-input">
+        </form>
+      </div> <!--finall search-->
+      
+    </div><!--finall navigation-->
+    <div class="pull-right" id="idioma">
+      <a><img src="{{ 'Amenos.png' | theme_image_url }}" class="img"></a>
+      <a><img src="{{ 'Amas.png' | theme_image_url }}" class="img"></a>
+      <a><img src="{{ 'ES.png' | theme_image_url }}" class="img"></a>
+      <a><img src="{{ 'EN.png' | theme_image_url }}" class="img"></a>
+    </div>
+  </div><!--finall container-center-->
+</div>  

@@ -1,0 +1,24 @@
+---
+name: Categorías
+description: Categorías de Contenido
+slug: categorias
+label_field_name: nombre
+order_by: created_at
+order_direction: asc
+fields:
+- nombre:
+    label: Nombre
+    type: string
+    required: true
+    unique: false
+    localized: false
+- noticias:
+    label: Noticias
+    type: has_many
+    required: false
+    unique: false
+    localized: false
+    class_name: noticias
+    order_by:
+    - created_at
+    - desc

@@ -1,0 +1,107 @@
+---
+title: COMUNICACIÓN SOCIAL
+slug: comunicacion-social
+handle: comunicacion-social
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 3
+seo_title: Comunicación Social
+---
+<!DOCTYPE html>
+<html class="">
+<head>
+  {% include 'head' %}
+</head>
+<body>
+
+<div class="panels ">
+  <div class="panel panel-left">
+  </div>
+</div>
+
+<div class="panel-content">
+  <div class="all-site">
+    
+    <!-- Header -->
+      {% include 'header' %}
+    <!-- final Header -->
+
+    <div class="container-center">
+      <div class="row">
+        <div class=" row col-9 content">
+
+          <div class="row col-12 comunicaion-social">
+
+            <!-- Breadcrumb -->
+			{% include 'page-breadcrumb' %}
+
+            <div class="row col-12">
+              <div class="article">
+                <h1>{{ page.title }}</h1>
+                <div>
+                  <!-- Menú Superior de Comunicación Social -->
+                  <ul class="menu-counicacion-social">
+                    {% nav 'comunicacion-social', depth: 1, no_wrapper: true, exclude: nil, icon: false %}
+                  </ul>
+                </div>
+              </div>
+            </div><!--finall row col-12 content-noticia-->
+          </div><!--finall row col-12 info-article-->
+			
+          <!-- Fotogalería Principal -->
+          {% include 'fotogaleria-comunicacion-social' %}
+
+          <!-- Carrusel de Fotos -->
+          {% include 'carrusel-de-fotos-comunicacion-social' %}
+		
+          <!-- Banner Convocatorias -->
+          <div class="row col-12 convocatorie">
+            <h1>
+              {% link_to convocatorias %}
+              	CONVOCATORIAS                
+              {% endlink_to %}
+            </h1>
+          </div><!--finall row col-12 convocatorie-->
+
+          <!-- Videos -->          
+          {% include 'videos-comunicacion-social' %}
+        
+        </div><!--finall col-9-->
+
+        <!-- Sidebar Portada de Sección -->
+        <div class="row col-3" id="sidebar-page">
+		{% include 'sidebar-comunicacion-social' %}
+          
+          
+         
+        </div><!--finall col-3-->
+      </div><!--finall -row-->
+    </div><!--finall container-center-->
+
+    <!-- Footer -->
+	    {% include 'footer' %}
+    <!-- final Footer -->
+  </div><!--final all-site-->
+</div><!--finall panel-content-->
+
+
+<!-- Javascripts Comunicación Social -->
+<script>
+
+$('.carousel[data-mixed] ul').anoSlide(
+{
+  items: 4,
+  speed: 500,
+  prev: 'a.prev[data-prev]',
+  next: 'a.next[data-next]',
+  lazy: true,
+  delay: 100,
+  responsiveAt: 480
+})
+
+</script>
+
+</body>
+</html>

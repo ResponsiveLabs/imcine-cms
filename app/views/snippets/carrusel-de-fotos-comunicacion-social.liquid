@@ -1,0 +1,19 @@
+<div class="row col-12 fotos">
+  <h4>FOTOGRAFÍAS</h4>
+  <div class="carousel" data-mixed="">
+    <a id="control-prev" class="prev" data-prev=""><img src="{{ 'flecha-carrusel-i.png' | theme_image_url }}" class="img"></a>
+    <a id="control-next" class="next" data-next=""><img src="{{ 'flecha-carrusel-d.png' | theme_image_url }}" class="img"></a>
+    <ul>
+      {% for foto in contents.fotos limit:10 %}
+      <li>
+        <div class="wrap">
+          <figure>
+            <img src="{{ foto.imagen_url }}" class="img carrusel-img">
+          </figure>
+          <p>{{ foto.titulo }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>    
+  </div>
+</div>

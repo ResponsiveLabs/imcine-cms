@@ -1,0 +1,146 @@
+---
+title: IMCINE
+slug: imcine
+handle: imcine
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 0
+seo_title: IMCINE
+editable_elements:
+  /bienvenida_imcine: <p>Bienvenidos. Esta es la secci&oacute;n en la que podr&aacute;s
+    encontrar la informaci&oacute;n sobre el Instituto:&nbsp;qui&eacute;nes somos,
+    las leyes y reglamentos que enmarcan nuestro quehacer y la actividad cinematogr&aacute;fica&nbsp;en
+    el pa&iacute;s, los informes de Imcine y las estad&iacute;sticas sobre el cine
+    nacional y las respuestas a las preguntas m&aacute;s frecuentes sobre el Instituto,
+    el cine en M&eacute;xico y m&aacute;s.</p>
+---
+<!DOCTYPE html>
+<html class="">
+<head>
+	{% include 'head' %}
+</head>
+<body>
+
+<div class="panels ">
+  <div class="panel panel-left">
+  </div>
+</div>
+
+<div class="panel-content">
+  <div class="all-site">
+    
+    <!-- Header -->
+      {% include 'header' %}
+    <!-- final Header -->
+
+ <div class="container-center">
+      <div class="row">
+        <div class=" row col-9 content">
+
+          <div class="row col-12 fotos">
+            
+            <!-- Breadcrumb -->
+			{% include 'page-breadcrumb' %}
+
+            <div class="row col-12 content-noticia">
+              <div class="article">
+                <h1>{{ page.title }}</h1>
+                
+                <!-- Texto Editable Bienvenida IMCINE -->
+                <p>
+                  {% editable_text "bienvenida_imcine", hint: "Texto de Bienvenida a la sección de IMCINE" %}
+					Bienvenidos. Esta es la sección en la que podrás encontrar la información sobre el Instituto:
+                   quiénes somos, las leyes y reglamentos que enmarcan nuestro quehacer y la actividad cinematográfica
+                   en el país, los informes de Imcine y las estadísticas sobre el cine nacional y las respuestas a las preguntas más frecuentes sobre el Instituto, el cine en México y más.				Default Content
+                  {% endeditable_text %}
+                  
+                </p>
+              </div>
+              <div class="ver-mas">
+	            {% link_to el-instituto %}
+                	VER MÁS
+                {% endlink_to %}
+                	
+              </div>             
+            </div><!--finall row col-12 content-noticia-->
+          </div><!--finall row info-noticias-->
+          
+          <!-- Banner con Link a Sección de Líneas de Acción -->
+          <div class="col-12">
+            <div class="banner-imcine">
+              <center>
+                <h1>
+                {% link_to lineas-de-accion %}
+                	LÍNEAS DE ACCIÓN
+                {% endlink_to %}
+              	</h1>
+              </center>
+            </div>
+          </div>
+
+          <div class="row col-12 divider"></div>
+
+          <!-- Inicia Sección Leyes y Reglamentos -->	
+          {% include 'bloque-leyes-y-reglamentos' %}
+
+          
+          
+          <div class="row col-12 content-noticia">
+            
+            <!-- Banner a Estímulos a Creadores -->
+            <div class="banner-imcine">
+                <center><h1>ESTÍMULOS A CREADORES</h1></center>
+            </div>
+            
+            <!-- Banners a Secciones Directorio y Dirección -->
+            <div class="col-6 directorio">
+              <div class="banner-gris">
+                <center>
+                  <h1>
+                  	{% link_to directorio %}
+                		DIRECTORIO
+                	{% endlink_to %}
+                  </h1>
+                </center>
+              </div>
+            </div>
+            <div class="col-6 direccion">
+              <div class="banner-gris">
+                <center>
+                  <h1>
+                    {% link_to direccion %}
+                		DIRECCIÓN
+               		{% endlink_to %}
+                  </h1>
+                </center>
+              </div>
+            </div>  
+
+            <div class="row col-12 divider"></div>
+            
+            <!-- Sección Cartelera y Festivales -->
+            {% include 'bloque-cartelera-y-festivales' %}
+          
+          </div>
+
+        </div><!--finall col-9-->
+		
+        
+        <!-- Sidebar Portada de Sección -->
+        <div class="row col-3" id="sidebar-right-pages">                 
+          {% include 'sidebar-imcine' %}
+        </div><!--finall col-3-->
+        
+      </div><!--finall -row-->
+    </div><!--finall container-center-->
+
+	<!-- Footer -->
+	    {% include 'footer' %}
+    <!-- final Footer -->
+  </div><!--final all-site-->
+</div><!--finall panel-content-->
+
+</body>
+</html>

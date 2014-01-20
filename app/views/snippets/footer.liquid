@@ -1,3 +1,36 @@
-<div class='footer'>
-  <p>&copy; Company {{ now | localized_date: '%Y' }}</p>
-</div>
+<footer class="row footer">
+  <div class="row col-12" id="menu-footer">
+    <center><ul class="menu-footer">
+      <li><h4><a href="#">DIRECTORIO</a></h4></li>
+      <li class="divider"></li>
+      <li><h6><a href="#">CONTACTO</a></h6></li>
+      <li class="divider"></li>
+      <li><h6><a href="#">MAPA DEL SITIO</a></h6></li>
+      <li class="divider"></li>
+      <li><h6><a href="#">SITIOS DE INTERÉS</a></h6></li>
+      <li class="divider"></li>
+      <li><h6><a href="#">RESPONSABLES DEL SITIO</a></h6></li>
+      <li class="divider"></li>
+      <li><h6><a href="#">PREGUNTAS FRECUENTES</a></h6></li>
+      </ul></center>
+  </div>
+  
+  <div class="row col-12" >
+    <div>
+      <img src="{{ 'logos-footer.jpg' | theme_image_url }}" class="img">
+    </div>
+  </div>
+  
+  <div class="row col-12">
+    <div class="copyright">
+      <center><h6>© 2010-2014. Instituto Mexicano de Cinematografía - Av. Insurgentes Sur No. 674<br>Colonia del Valle. Delegación Benito Juárez. México D.F. 03100. Teléfono 5448 5300</h6></center>
+    </div>
+  </div>
+</footer><!--finall footer-->
+  
+<script TYPE="text/javascript" src="{{ 'jquery.js' | javascript_url }}"></script>
+<script TYPE="text/javascript" src="{{ 'furatto.min.js' | javascript_url }}"></script>
+<script TYPE="text/javascript" src="{{ 'jquery.bxslider.js' | javascript_url }}"></script>
+<script TYPE="text/javascript" src="{{ 'jcarousellite.js' | javascript_url }}"></script>
+<script TYPE="text/javascript" src="{{ 'jquery.anoslide.js' | javascript_url }}"></script>
+<script TYPE="text/javascript" src="{{ 'furatto-demo.js' | javascript_url }}"></script>

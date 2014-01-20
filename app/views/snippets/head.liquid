@@ -1,0 +1,17 @@
+<meta charset=utf-8 />
+<title>
+  {{ page.title }} - {{ site.name }}
+  | {% if page.seo_title %}{{ page.seo_title }}{% else %}{{ site.seo_title }}{% endif %}
+</title>
+<meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.meta_description }}{% endif %}">
+<meta name="keywords" content="{{ site.meta_keywords }} {{ page.meta_keywords }}">
+
+{{ 'style-1024.css' | stylesheet_tag }}
+{{ 'furatto.css' | stylesheet_tag }}
+{{ 'font-awesome.css' | stylesheet_tag }}
+{{ 'normalize.css' | stylesheet_tag }}
+
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>  
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"> 

@@ -1,0 +1,55 @@
+---
+name: Fotos
+description: Fotografía
+slug: fotos
+label_field_name: imagen
+order_by: created_at
+order_direction: desc
+fields:
+- imagen:
+    label: Imagen
+    type: file
+    required: true
+    unique: false
+    localized: false
+- titulo:
+    label: Título
+    type: string
+    required: true
+    unique: false
+    localized: false
+- descripcion:
+    label: Descripción
+    type: text
+    required: false
+    unique: false
+    localized: false
+    text_formatting: html
+- fuente:
+    label: Fuente
+    type: string
+    required: false
+    unique: false
+    localized: false
+- noticias:
+    label: Noticias
+    type: many_to_many
+    required: false
+    unique: false
+    localized: false
+    class_name: noticias
+    inverse_of: fotos
+    order_by:
+    - created_at
+    - desc
+- galerias:
+    label: Galerías
+    type: many_to_many
+    required: false
+    unique: false
+    localized: false
+    class_name: galerias
+    inverse_of: fotos
+    order_by:
+    - created_at
+    - desc

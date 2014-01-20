@@ -1,0 +1,48 @@
+---
+name: Galerías
+description: Foto Galerías
+slug: galerias
+label_field_name: titulo
+order_by: created_at
+order_direction: desc
+fields:
+- titulo:
+    label: Título
+    type: string
+    required: true
+    unique: false
+    localized: false
+- fecha_de_publicacion:
+    label: Fecha de Publicación
+    type: date_time
+    required: true
+    unique: false
+    localized: false
+- publicado:
+    label: Publicado
+    type: boolean
+    required: false
+    unique: false
+    localized: false
+- descripcion:
+    label: Descripción
+    type: text
+    required: false
+    unique: false
+    localized: false
+    text_formatting: html
+- fotos:
+    label: Fotos
+    type: many_to_many
+    required: false
+    unique: false
+    localized: false
+    class_name: fotos
+    inverse_of: galerias
+    ui_enabled: true
+- imagen_destacada:
+    label: Imagen Destacada
+    type: file
+    required: true
+    unique: false
+    localized: false

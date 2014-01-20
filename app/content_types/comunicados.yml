@@ -1,0 +1,52 @@
+---
+name: Comunicados
+description: Boletines y Comunicados
+slug: comunicados
+label_field_name: titulo
+order_by: created_at
+order_direction: asc
+fields:
+- titulo:
+    label: Título
+    type: string
+    required: true
+    unique: false
+    localized: false
+- fecha_de_publicacion:
+    label: Fecha de Publicación
+    type: date
+    required: false
+    unique: false
+    localized: false
+- publicado:
+    label: Publicado
+    type: boolean
+    required: false
+    unique: false
+    localized: false
+- desripcion:
+    label: Descripción
+    type: text
+    required: false
+    unique: false
+    localized: false
+    text_formatting: html
+- texto:
+    label: Texto
+    type: text
+    required: false
+    unique: false
+    localized: false
+    text_formatting: html
+- imagen_destacada:
+    label: Imagen Destacada
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento:
+    label: Documento
+    type: file
+    required: false
+    unique: false
+    localized: false

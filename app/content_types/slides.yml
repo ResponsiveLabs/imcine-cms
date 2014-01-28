@@ -1,0 +1,33 @@
+---
+name: Slides
+description: Imágenes para el slider principal
+slug: slides
+label_field_name: descripcion
+order_by: manually
+order_direction: asc
+fields:
+- titulo:
+    label: Título
+    type: string
+    required: true
+    unique: false
+    localized: false
+- descripcion:
+    label: Descripción
+    type: text
+    required: true
+    unique: false
+    localized: false
+    text_formatting: html
+- url:
+    label: URL
+    type: string
+    required: false
+    unique: false
+    localized: false
+- imagen:
+    label: Imagen
+    type: file
+    required: true
+    unique: false
+    localized: false

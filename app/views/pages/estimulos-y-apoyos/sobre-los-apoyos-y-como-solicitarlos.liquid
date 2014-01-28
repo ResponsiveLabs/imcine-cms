@@ -1,0 +1,146 @@
+---
+title: SOBRE LOS APOYOS Y CÓMO SOLICITARLOS
+slug: sobre-los-apoyos-y-como-solicitarlos
+handle: sobre-los-apoyos-y-como-solicitarlos
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 1
+seo_title: SOBRE LOS APOYOS Y CÓMO SOLICITARLOS
+editable_elements:
+  /bienvenida_convocatorias: <p>Da clic en la pregunta que te interese para encontrar
+    r&aacute;pidamente la respuesta. Si no encuentras lo que buscas, por favor cont&aacute;ctanos
+    y con gusto te orientaremos.</p>
+---
+<!DOCTYPE html>
+<html class="">
+<head>
+	{% include 'head' %}
+</head>
+<body>
+
+<div class="panels ">
+  <div class="panel panel-left">
+  </div>
+</div>
+
+<div class="panel-content">
+  <div class="all-site">
+    
+    <!-- Header -->
+      {% include 'header' %}
+    <!-- final Header -->
+
+ <div class="container-center">
+      <div class="row">
+        <div class=" row col-9 content">
+
+          <div class="row col-12 info-article">
+            
+            <!-- Breadcrumb -->
+			{% include 'page-breadcrumb' %}
+
+            <div class="row col-12 content-noticia">
+              <div class="article">
+                <h1>{{ page.title }}</h1>
+                
+                <!-- Texto Editable Bienvenida IMCINE -->
+                <p>
+                  {% editable_text "bienvenida_convocatorias", hint: "Texto de Bienvenida a la sección 'Sobre los Apoyos y Cómo Solicitarlos'" %}
+					Da clic en la pregunta que te interese para encontrar rápidamente la respuesta. Si no encuentras lo que buscas, por favor contáctanos y con gusto te orientaremos.
+                  {% endeditable_text %}
+                  
+                </p>
+              </div>
+              <div class="ver-mas">
+	            
+                	
+              </div>             
+            </div><!--finall row col-12 content-noticia-->
+            
+            <div class="row col-12 preguntas-apoyo">
+            <ol class="list-question">
+
+              <li>
+                <a href="#" onclick="cambiar('domanda1'); return false;">Quiero hacer mi película pero sólo tengo una buena idea o un guión sin terminar.</a>
+                <div class="domanda" id="domanda1" style="display: none;">
+                  Si necesitas terminar tu guión puedes solicitar un apoyo a través del Programa de Estímulo a Creadores en tres rubros:
+                  <ul class="list-domanda1">
+                    <li>-Desarrollo de líneas argumentales</li>
+                    <li>-Taller de escritura de guión</li>
+                    <li>-Apoyo directo a escritura</li>
+                  </ul>
+                  Da clic <a href="#" id="link">aquí</a> para leer más sobre éstos apoyos<br>
+                  También puedes revisar la <a href="#" id="link">oferta de espacios académicos</a> que fomenta el Imcine junto con instituciones públicas privadas.
+                </div>
+              </li>
+
+              <li>
+                <a href="#" onclick="cambiar('domanda2'); return false;">Tengo un guión terminado y necesito financiamiento para hacer una película.</a>
+              </li>
+
+              <li>
+                <a href="#" onclick="cambiar('domanda3'); return false;">Necesito un buen guión para producir una película.</a>
+              </li>
+
+              <li>
+                <a href="#" onclick="cambiar('domanda4'); return false;">Quiero producir mi cortometraje.</a>
+              </li>
+
+              <li>
+                <a href="#" onclick="cambiar('domanda5'); return false;">Quiero producir mi película, pero no es largometraje ni cortometraje.</a>
+              </li>
+
+              <li>
+                <a href="#" onclick="cambiar('domanda6'); return false;">Quiero terminar mi largometraje.</a>
+              </li>
+
+              <li>
+                <a href="#" onclick="cambiar('domanda7'); return false;">Quiero terminar mi cortometraje.</a>
+              </li>
+
+              <li>
+                <a href="#" onclick="cambiar('domanda8'); return false;">Quiero promover una película que ya esta terminada.</a>
+              </li>
+
+              <li>
+                <a href="#" onclick="cambiar('domanda9'); return false;">Tengo un guión terminado y me interesa profundizar en la propuesta creativa y técnica para su producción.</a>
+              </li>
+            </ol>
+          </div> 
+         
+            
+          </div><!--finall row info-noticias-->
+		</div><!--finall col-9 content-->
+		
+        
+        <!-- Sidebar Portada de Sección -->
+        <div class="row col-3" id="sidebar-right-pages">                 
+          {% include 'sidebar-estimulos-y-apoyos-subp' %}
+        </div><!--finall col-3-->
+        
+      </div><!--finall -row-->
+    </div><!--finall container-center-->
+
+	<!-- Footer -->
+	    {% include 'footer' %}
+    <!-- final Footer -->
+  </div><!--final all-site-->
+</div><!--finall panel-content-->
+  
+<script>
+  function cambiar(esto)
+  {
+    vista=document.getElementById(esto).style.display;
+    if (vista=='none')
+      vista='block';
+    else
+      vista='none';
+
+    document.getElementById(esto).style.display = vista;
+  }
+  </script>
+
+</body>
+</html>

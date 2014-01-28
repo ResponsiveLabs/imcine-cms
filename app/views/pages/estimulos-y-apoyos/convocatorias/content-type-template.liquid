@@ -1,0 +1,118 @@
+---
+title: CONVOCATORIA
+slug: content_type_template
+handle: convocatoria
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 0
+seo_title: Convocatoria
+content_type: convocatorias
+---
+<!DOCTYPE html>
+<html class="">
+<head>
+  {% include 'head' %}
+</head>
+<body>
+
+<div class="panels ">
+  <div class="panel panel-left">
+  </div>
+</div>
+
+<div class="panel-content">
+  <div class="all-site">
+    
+    <!-- Header -->
+      {% include 'header' %}
+    <!-- final Header -->
+
+    <div class="container-center">
+      <div class="row">
+        <div class=" row col-9 content">
+          <div class="row col-12 info-noticias">
+            
+            <!-- Breadcrumb -->
+			{% include 'page-breadcrumb' %}
+
+            <!-- Título e Imagen Destacada -->
+            <div class="row col-5 datos-noticias">
+              <strong>{{ convocatoria.titulo }}</strong>
+              <p class="light">{{ convocatoria.fecha | localized_date: '%d/%m/%Y'}}</p>
+              <p class="light"> <!-- Actualización --> </p><br>
+              <h6></h6>
+              <p><!-- Fuente --></p><br>
+              <a href=""><!-- INFORMACIÓN RELACIONADA --></a>
+            </div><!--finall row col-5 datos-noticias-->
+
+            <div class="row col-6 imagen">
+              <img src="{{ convocatoria.imagen_destacada_url }}" class="img">
+              <p></p>
+            </div><!--finall row col-6 imagen-->
+          </div><!--finall row info-noticias-->
+          
+          <div class="row col-12 info-article">
+            {{ convocatoria.descripcion }}
+          </div>
+          
+           <div class="row col-12 relacionado">
+            <h1>RELACIONADO</h1>
+             <div class="row col-4">
+                <div class="noticias-relacionadas">
+
+			{% if convocatoria.documento_1_url %}
+              
+                  <a href="{{ convocatoria.documento_1_url }}"><strong>Documento 1 </strong></a><br>
+
+            {% endif %}
+             
+            {% if convocatoria.documento_2_url %}
+              
+                  <a href="{{ convocatoria.documento_2_url }}"><strong>Documento 2 </strong></a><br>
+              
+            {% endif %}
+            
+            {% if convocatoria.documento_3_url %}
+                  
+                  <a href="{{ convocatoria.documento_3_url }}"><strong>Documento 3 </strong></a><br>
+              
+            {% endif %}
+             
+            {% if convocatoria.documento_4_url %}
+              
+                  <a href="{{ convocatoria.documento_4_url }}"><strong>Documento 4 </strong></a><br>
+              
+            {% endif %}
+            
+            {% if convocatoria.documento_5_url %}
+                  
+                  <a href="{{ convocatoria.documento_5_url }}"><strong>Documento 5 </strong></a><br>
+                        
+            {% endif %}
+               </div>
+             </div>  
+
+          </div>
+          
+        </div>
+			                        
+        <!-- Sidebar Portada de Sección -->
+        <div class="row col-3" id="sidebar-page">
+          {% include 'sidebar-estimulos-y-apoyos-subp' %}
+          
+          
+         
+        </div><!--finall col-3-->
+      </div><!--finall -row-->
+    </div><!--finall container-center-->
+
+    <!-- Footer -->
+	    {% include 'footer' %}
+    <!-- final Footer -->
+  </div><!--final all-site-->
+</div><!--finall panel-content-->
+
+</body>
+</html>

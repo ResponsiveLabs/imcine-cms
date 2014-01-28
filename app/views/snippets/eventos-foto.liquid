@@ -1,0 +1,11 @@
+<div class="row fotos-clausura">
+  <div class="col-12">
+    {% for foto in contents.fotos limit:4 %}
+    <div class="col-3">
+      <img src="{{ foto.imagen_url | resize: 'x80' }}" class="img">
+      <!--img src="{{ 'foto-1.jpg' | theme_image_url }}" class="img"-->
+      <center><span>{{ foto.titulo }}</span></center>
+    </div>
+    {% endfor %}
+  </div>
+</div><!-- final row fotos-clausura -->

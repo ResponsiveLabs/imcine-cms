@@ -1,0 +1,18 @@
+{% paginate contents.boletines_y_comunicados by 10 %} 
+  {% for boletines_y_comunicados in paginate.collection %}
+    <div clas="row col-12 boletines">
+      <div class="row boletin-info">
+        <div class="pull-left" id="boletin-date">
+          <h5><strong>{{ boletines_y_comunicados.fecha | localized_date: '%d/%m/%Y' }}</strong></h5>
+        </div>
+        <div class="pull-right">
+          <a href="#"><img src="{{ 'vermas-boletin.png' | theme_image_url }}" class="img"></a>
+        </div>
+        <div class="contenido-boletin">
+          <h4><strong>{{ boletines_y_comunicados.titulo }}</strong></h4>
+        </div>
+      </div>
+    </div><!--finall boletines-->
+  {% endfor %}
+  {{ paginate | default_pagination: 'previous_label:Anterior', 'next_label:Siguiente' }}
+{% endpaginate %}

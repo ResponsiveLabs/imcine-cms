@@ -1,4 +1,18 @@
 ---
+- Fotos de Clausura 11° FICM 2012:
+    _slug: fotos-de-clausura-11-ficm-2012
+    fecha_de_publicacion: 01/24/2014 00:00
+    publicado: true
+    descripcion: <p><span>El&nbsp;</span><strong>Festival Internacional de Cine de
+      Morelia (FICM)</strong><span>&nbsp;</span><strong>2012</strong><span>&nbsp;llega
+      a su edici&oacute;n n&uacute;mero 10, y con ello presenta pel&iacute;culas que
+      han generado expectativa alrededor del mundo, pero tambi&eacute;n hay esas peque&ntilde;as
+      joyitas que s&oacute;lo pueden verse en circuitos como los que ofrece&nbsp;</span><strong>Morelia</strong><span>.</span></p>
+    fotos:
+    - img2
+    - ficm3
+    - ficm4
+    imagen_destacada: /samples/galerias/fotos-de-clausura-11-ficm-2012/img1.jpg
 - ARTES.DOCS 2do. Encuentro Internacional de Documentales de Artes:
     _slug: artes-dot-docs-2do-encuentro-internacional-de-documentales-de-artes
     fecha_de_publicacion: 01/18/2014 19:00

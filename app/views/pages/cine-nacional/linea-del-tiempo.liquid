@@ -1,0 +1,126 @@
+---
+title: LÍNEA DEL TIEMPO
+slug: linea-del-tiempo
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 6
+seo_title: LÍNEA DEL TIEMPO
+editable_elements:
+  /bienvenida_convocatorias: <p><span>Aqu&iacute; encontrar&aacute;s informaci&oacute;n
+    sobre los acontecimientos m&aacute;s significativos a partir de la creaci&oacute;n
+    del Imcine. Un recorrido cronol&oacute;gico que busca acercarte a los sucesos
+    hist&oacute;ricos de nuestro cine en las &uacute;ltimas 3 d&eacute;cadas.</span></p>
+---
+<!DOCTYPE html>
+<html class="">
+<head>
+	{% include 'head' %}
+</head>
+<body>
+
+<div class="panels ">
+  <div class="panel panel-left">
+  </div>
+</div>
+
+<div class="panel-content">
+  <div class="all-site">
+    
+    <!-- Header -->
+      {% include 'header' %}
+    <!-- final Header -->
+
+ <div class="container-center">
+      <div class="row">
+        <div class=" row col-9 content">
+
+          <div class="row col-12 info-article">
+            
+            <!-- Breadcrumb -->
+			{% include 'page-breadcrumb' %}
+
+            <div class="row col-12 content-noticia">
+              <div class="article">
+                <h1>{{ page.title }}</h1>
+                
+                <!-- Texto Editable Bienvenida Publicaciones y Libros -->
+                <p>
+                  {% editable_text "bienvenida_convocatorias", hint: "Texto de Bienvenida a la sección 'Publicaciones y Libros'" %}
+					Aquí encontrarás información sobre los acontecimientos más significativos.
+                  {% endeditable_text %}
+                </p>
+              </div>
+              <div class="ver-mas">
+              </div>             
+            </div><!--finall row col-12 content-noticia-->
+          </div><!--finall row info-noticias-->
+          
+          <div class="row">
+            <div class="col-12 periodo">
+              <div class="col-5">
+                <p>Selecciona por periodo: 
+                  <select name="periodo">
+                    <option>1983 - 1987</option>
+                    <option>1990 - 1999</option>
+                    <option>2000 - 2013</option>
+                  </select>
+                </p>
+              </div>
+              <div class="col-7">
+                <div class="col-3 shared">
+                  <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                  <script>!function(d,s,id){
+                    var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                    if(!d.getElementById(id)){js=d.createElement(s);
+                    js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js,fjs);}}
+                    (document, 'script', 'twitter-wjs');
+                  </script>
+
+                  <!-- Place this tag where you want the +1 button to render. -->
+                  <div class="g-plusone"></div>
+
+                  <!-- Place this tag after the last +1 button tag. -->
+                  <script type="text/javascript">
+                    (function() {
+                      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                      po.src = 'https://apis.google.com/js/platform.js';
+                      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                    })();
+                  </script>   
+                </div><!-- close col-3 -->
+              </div><!--close col-3 shared-->
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-12">
+              <img src="{{ 'linea-tiempo.jpg' | theme_image_url }}" class="img">
+
+              <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+
+
+            </div>
+          </div>
+
+		</div><!--finall col-9 content-->
+		
+        
+        <!-- Sidebar Portada de Sección -->
+        <div class="row col-3" id="sidebar-right-pages">                 
+          {% include 'sidebar-cine-nacional-subpaginas' %}
+        </div><!--finall col-3-->
+        
+      </div><!--finall -row-->
+    </div><!--finall container-center-->
+
+	<!-- Footer -->
+	    {% include 'footer' %}
+    <!-- final Footer -->
+  </div><!--final all-site-->
+</div><!--finall panel-content-->
+
+</body>
+</html>

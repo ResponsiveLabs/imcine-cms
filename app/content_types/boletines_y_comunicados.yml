@@ -1,0 +1,75 @@
+---
+name: Boletines y Comunicados
+description: Boletines y Comunicados de COMUNICACIÓN SOCIAL
+slug: boletines_y_comunicados
+label_field_name: titulo
+order_by: fecha
+order_direction: desc
+fields:
+- titulo:
+    label: Título
+    type: string
+    required: true
+    unique: false
+    localized: false
+- fecha:
+    label: Fecha
+    type: date
+    required: true
+    unique: false
+    localized: false
+- publicado:
+    label: 'Publicado '
+    type: boolean
+    required: false
+    unique: false
+    localized: false
+- imagen:
+    label: Imagen
+    type: file
+    required: false
+    unique: false
+    localized: false
+- imagen_destacada:
+    label: Imagen Destacada
+    type: file
+    required: false
+    unique: false
+    localized: false
+- descripcion:
+    label: 'Descripción '
+    type: text
+    required: false
+    unique: false
+    localized: false
+    text_formatting: html
+- documento_1:
+    label: Documento 1
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento_2:
+    label: Documento 2
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento_3:
+    label: Documento 3
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento_4:
+    label: Documento 4
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento_5:
+    label: Documento 5
+    type: file
+    required: false
+    unique: false
+    localized: false

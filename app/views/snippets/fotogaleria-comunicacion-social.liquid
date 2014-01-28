@@ -6,7 +6,7 @@
     <p>{{ galeria.descripcion }}</p>
   </div>
   <div class="col-6">
-    <img src="{{ galeria.imagen_destacada_url }}" class="img">
+    <img src="{{ galeria.imagen_destacada_url | resize: 'x370'}}" class="img">
   </div>
   <div class="col-3">
     {% for foto in galeria.fotos limit:2 %}

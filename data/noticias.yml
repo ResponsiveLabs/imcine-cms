@@ -1,4 +1,27 @@
 ---
+- HAY UNA REAPROXIMACIÓN DEL CINE MEXICANO CON EL ESPECTADOR:
+    _slug: hay-una-reaproximacion-del-cine-mexicano-con-el-espectador
+    fecha_de_publicacion: 01/23/2014 12:35
+    publicado: true
+    descripcion: <p>El titular del Imcine habl&oacute; sobre el &eacute;xito reciente
+      de la cinematograf&iacute;a nacional durante&nbsp;la ponencia "Los retos...</p>
+    texto: <p>El titular del Imcine habl&oacute; sobre el &eacute;xito reciente de
+      la cinematograf&iacute;a nacional durante&nbsp;la ponencia "Los retos...</p>
+    imagen_destacada: /samples/noticias/hay-una-reaproximacion-del-cine-mexicano-con-el-espectador/slider3.jpg
+    fotos:
+    - img2
+    categoria: internacionales
+- HAY UNA REAPROXIMACIÓN DEL CINE MEXICANO CON EL ESPECTADOR:
+    _slug: hay-una-reaproximaci-n-del-cine-mexicano-con-el-espectador
+    fecha_de_publicacion: 01/23/2014 12:26
+    publicado: true
+    descripcion: <p>El titular del Imcine habl&oacute; sobre el &eacute;xito reciente
+      de la cinematograf&iacute;a nacional durante&nbsp;la ponencia "Los retos...</p>
+    texto: <p>El titular del Imcine habl&oacute; sobre el &eacute;xito reciente de
+      la cinematograf&iacute;a nacional durante&nbsp;la ponencia "Los retos...</p>
+    imagen_destacada: /samples/noticias/hay-una-reaproximaci-n-del-cine-mexicano-con-el-espectador/slider3.jpg
+    fotos: []
+    categoria: festivales
 - Presencia de Filmes Mexicanos en Festivales Internacionales:
     _slug: presencia-de-filmes-mexicanos-en-festivales-internacionales
     fecha_de_publicacion: 01/18/2014 18:00

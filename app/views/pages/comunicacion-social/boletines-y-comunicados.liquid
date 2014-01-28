@@ -8,5 +8,109 @@ cache_strategy: none
 response_type: text/html
 position: 0
 seo_title: Boletines y Comunicados
+editable_elements:
+  /bienvenida_boletines_y_comunicados: "<p>Encuentra aqu&iacute; los boletines de
+    prensa que emite el Imcine, organizador por fecha. Puedes leer lo principal del
+    bolet&iacute;n en pantalla o descargarlo completo al dar clic en el archivo que
+    se muestra al final del texto.</p>\r\n<p><span>Si necesitas otra informaci&oacute;n
+    del Departamento de Prensa del Imcine, por favor llama al tel&eacute;fono (+52
+    55) 5448-5361 o env&iacute;anos un&nbsp;</span><a id=\"link\" href=\"#\">correo
+    electr&oacute;nico</a><span>.</span></p>"
 ---
-{% extends 'parent' %}
+<!DOCTYPE html>
+<html class="">
+<head>
+	{% include 'head' %}
+</head>
+<body>
+
+<div class="panels ">
+  <div class="panel panel-left">
+  </div>
+</div>
+
+<div class="panel-content">
+  <div class="all-site">
+    
+    <!-- Header -->
+      {% include 'header' %}
+    <!-- final Header -->
+
+ <div class="container-center">
+      <div class="row">
+        <div class=" row col-9 content">
+
+          <div class="row col-12 fotos">
+            
+            <!-- Breadcrumb -->
+			{% include 'page-breadcrumb' %}
+
+            <div class="row col-12 content-noticia">
+              <div class="article">
+                <h1>{{ page.title }}</h1>
+                
+                <!-- Texto Editable Bienvenida Boletines y Comunicados -->
+                <p>
+                  {% editable_text "bienvenida_boletines_y_comunicados", hint: "Texto de Bienvenida a la sección de Boletines y Comunicados" %}
+					Encuentra aquí los boletines de prensa que emite el Imcine, organizador por fecha. Puedes leer lo principal del boletín en pantalla o descargarlo completo al dar clic en el archivo que se muestra al final del texto.
+                  {% endeditable_text %}
+                </p>
+              </div>
+              <div class="ver-mas">
+	            {% link_to el-instituto %}
+                	VER MÁS
+                {% endlink_to %}
+                	
+              </div>             
+            </div><!--finall row col-12 content-noticia-->
+          </div><!--finall row info-noticias-->
+          
+          <div class="row col-12 share">
+            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            <script>!function(d,s,id){
+              var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+              if(!d.getElementById(id)){js=d.createElement(s);
+                js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js,fjs);}}
+                (document, 'script', 'twitter-wjs');
+            </script>
+
+            <!-- Place this tag where you want the +1 button to render. -->
+            <div class="g-plusone"></div>
+
+            <!-- Place this tag after the last +1 button tag. -->
+            <script type="text/javascript">
+              (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/platform.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+            </script>    
+          </div>
+
+          <div class="row fecha">
+            <h4>BUSCAR POR FECHA</h4>
+            <div class="date">
+              <input id="calendario" type="text" data-datepicker placeholder="dd, mmmm, yyyy"/>
+            </div>         
+          </div>     
+          {% include 'listado-boletines-y-comu' %}
+        </div><!--finall col-9-->
+		
+        
+        <!-- Sidebar Portada de Sección -->
+        <div class="row col-3" id="sidebar-right-pages">                 
+          {% include 'sidebar-comunicacion-social-subpaginas' %}
+        </div><!--finall col-3-->
+        
+      </div><!--finall -row-->
+    </div><!--finall container-center-->
+
+	<!-- Footer -->
+	    {% include 'footer' %}
+    <!-- final Footer -->
+  </div><!--final all-site-->
+</div><!--finall panel-content-->
+
+</body>
+</html>

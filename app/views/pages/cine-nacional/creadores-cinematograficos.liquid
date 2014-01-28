@@ -1,0 +1,155 @@
+---
+title: CREADORES CINEMATOGRÁFICOS
+slug: creadores-cinematograficos
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 7
+seo_title: CREADORES CINEMATOGRÁFICOS
+editable_elements:
+  /bienvenida_convocatorias: <p><span>Aqu&iacute; encontraras la filmograf&iacute;a
+    de los directores de cine mexicano as&iacute; como filmograf&iacute;a de los cinefot&oacute;grafos
+    que hayan filmado pel&iacute;ulas entre 2007-2012 apoyadas por el IMCINE y sus
+    fideicomisos.</span></p>
+---
+<!DOCTYPE html>
+<html class="">
+<head>
+	{% include 'head' %}
+</head>
+<body>
+
+<div class="panels ">
+  <div class="panel panel-left">
+  </div>
+</div>
+
+<div class="panel-content">
+  <div class="all-site">
+    
+    <!-- Header -->
+      {% include 'header' %}
+    <!-- final Header -->
+
+ <div class="container-center">
+      <div class="row">
+        <div class=" row col-9 content">
+
+          <div class="row col-12 info-article">
+            
+            <!-- Breadcrumb -->
+			{% include 'page-breadcrumb' %}
+
+            <div class="row col-12 content-noticia">
+              <div class="article">
+                <h1>{{ page.title }}</h1>
+                
+                <!-- Texto Editable Bienvenida Creadores Cinematográficos -->
+                <p>
+                  {% editable_text "bienvenida_convocatorias", hint: "Texto de Bienvenida a la sección 'Creadores Cinematográficos'" %}
+					Aquí encontraras la filmografía de los directores de cine mexicano.
+                  {% endeditable_text %}
+                </p>
+              </div>
+              <div class="ver-mas">
+              </div>             
+            </div><!--finall row col-12 content-noticia-->
+          </div><!--finall row info-noticias-->
+          
+          <div class="row col-12 libro-electronico">
+            <h1>DIRECTORES DE CINE MEXICANOS</h1>
+            <div class="indice">
+              <ul class="inline" id="list-indice">
+                <li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+                <li><a href="#">I</a></li>
+                <li><a href="#">J</a></li>
+                <li><a href="#">K</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">N</a></li>
+                <li><a href="#">O</a></li>
+                <li><a href="#">P</a></li>
+                <li><a href="#">Q</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">T</a></li>
+                <li><a href="#">U</a></li>
+                <li><a href="#">V</a></li>
+                <li><a href="#">W</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Y</a></li>
+                <li><a href="#">Z</a></li>
+              </ul>
+            </div>
+		  <div class="col-12 content-twt-fb">
+            <center><iframe src="http://docs.google.com/gview?url=http://victorpimentel.com/stuff/rubik.pdf&embedded=true" style="width:500px; height:375px;" frameborder="0" class="img"></iframe></center>
+          </div>
+          </div><!--finall libro-electronico-->
+
+          <div class="row col-12 divider"></div>
+
+          <div class="col-6 leyes1">
+              <h3>CINEMATÓGRAFOS</h3>
+          </div>
+          <div class="col-6 ver-peliculas">
+            <a href="#">VER TODAS LAS PELÍCULAS EXITOSAS</a>
+          </div>
+
+          <div class="col-3 exitos"> 
+            <img src="{{ 'movie1_1.jpg' | theme_image_url }}" class="img">
+            <a href="#"><h5>LOS FABULOSOS 7</h5></a>
+            <span>Fernando Sariñana</span>
+            <span>2013</span>
+          </div>
+
+          <div class="col-3 exitos"> 
+            <img src="{{ 'movie2_2.jpg' | theme_image_url }}" class="img">
+            <a href="#"><h5>ACTORES, S.A.</h5></a>
+            <span>Carlos González Sariñana</span>
+            <span>2008</span>
+          </div>
+
+          <div class="col-3 exitos"> 
+            <img src="{{ 'movie3_3.jpg' | theme_image_url }}" class="img">
+            <a href="#"><h5>EL SECRETO DEL MEDALLÓN DE...</h5></a>
+            <span>Rodolfo Guzmán</span>
+            <span>Leopoldo Aguilar</span>
+            <span>2011</span>
+          </div>
+
+          <div class="col-3 exitos"> 
+            <img src="{{ 'movie4_4.jpg' | theme_image_url }}" class="img">
+            <a href="#"><h5>TODO EL MUNDO TIENE A ALGUIEN...</h5></a>
+            <span>Raúl Fuentes</span>
+            <span>2012</span>
+          </div>
+
+          <div class="row col-12 divider"></div>
+
+		</div><!--finall col-9 content-->
+		
+        
+        <!-- Sidebar Portada de Sección -->
+        <div class="row col-3" id="sidebar-right-pages">                 
+          {% include 'sidebar-cine-nacional-subpaginas' %}
+        </div><!--finall col-3-->
+        
+      </div><!--finall -row-->
+    </div><!--finall container-center-->
+
+	<!-- Footer -->
+	    {% include 'footer' %}
+    <!-- final Footer -->
+  </div><!--final all-site-->
+</div><!--finall panel-content-->
+
+</body>
+</html>

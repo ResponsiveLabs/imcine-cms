@@ -1,4 +1,29 @@
 ---
+- ? url: /samples/fotos/ficm4/FICM4.jpg
+  : _slug: ficm4
+    titulo: FICM4
+    descripcion: ''
+    fuente: IMCINE
+    noticias: []
+    galerias:
+    - fotos-de-clausura-11-ficm-2012
+- ? url: /samples/fotos/ficm3/FICM3.jpg
+  : _slug: ficm3
+    titulo: FICM3
+    descripcion: ''
+    fuente: IMCINE
+    noticias: []
+    galerias:
+    - fotos-de-clausura-11-ficm-2012
+- ? url: /samples/fotos/img2/FICM2.jpg
+  : _slug: img2
+    titulo: FICM2
+    descripcion: ''
+    fuente: IMCINE
+    noticias:
+    - hay-una-reaproximacion-del-cine-mexicano-con-el-espectador
+    galerias:
+    - fotos-de-clausura-11-ficm-2012
 - ? url: /samples/fotos/artesdocs-2/ARTESDOCS2.jpg
   : _slug: artesdocs-2
     titulo: ARTESDOCS 2

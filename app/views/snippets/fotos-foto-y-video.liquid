@@ -1,0 +1,26 @@
+{% for galeria in contents.galerias limit:1 %}
+<div class="row">
+  <div class="col-12">
+    <div class="col-6">
+      <img src="{{ galeria.imagen_destacada_url | resize: 'x370'}}" class="img">
+      <!--img src="" class="img"-->
+    </div>
+    <div class="col-3">
+      {% for foto in galeria.fotos limit:2 %}
+      <img src="{{ foto.imagen_url }}" class="img" id="img2">
+      <!--img src="" class="img">
+      <img src="" class="img"-->
+      {% endfor %}
+    </div>
+    <div class="col-3">
+      <img src="{{ 'img4.jpg' | theme_image_url }}" class="img">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <center><a href="#"><h3>{{galeria.titulo}}</h3></a></center>
+  <div class="col-12">
+    <div class="row col-12 divider"></div>
+  </div>
+</div>
+{% endfor %}

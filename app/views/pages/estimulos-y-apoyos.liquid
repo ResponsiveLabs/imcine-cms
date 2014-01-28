@@ -1,11 +1,141 @@
 ---
 title: ESTÍMULOS Y APOYOS
 slug: estimulos-y-apoyos
+handle: estimulos-y-apoyos
 listed: true
 published: true
 cache_strategy: none
 response_type: text/html
 position: 1
 seo_title: Estímulos y Apoyos
+editable_elements:
+  /bienvenida_estimulos: "<p>Si buscas apoyo para realizar tu proyecto cinematogr&aacute;fico,
+    el Imcine te puede ayudar a trav&eacute;s de los fondos y programas que administra.</p>\r\n<p>Existen
+    varios programas y fondos que intentan abarcar una amplia gama de apoyos, desde
+    desarrollo de proyectos y escritura de guiones, hasta la producci&oacute;n y postproducci&oacute;n
+    de cortos y largometrajes.</p>\r\n<p>Es importante que tomes en cuenta las convocatorias
+    vigentes y sus caracter&iacute;sticas. Si no tienes claro qu&eacute; tipo de apoyo
+    se puede ajustar a tus necesidades, te invitamos a consultar Tu apoyo paso a paso.</p>"
 ---
-{% extends 'parent' %}
+<!DOCTYPE html>
+<html class="">
+<head>
+	{% include 'head' %}
+</head>
+<body>
+
+<div class="panels ">
+  <div class="panel panel-left">
+  </div>
+</div>
+
+<div class="panel-content">
+  <div class="all-site">
+    
+    <!-- Header -->
+      {% include 'header' %}
+    <!-- final Header -->
+
+ <div class="container-center">
+      <div class="row">
+        <div class=" row col-9 content">
+
+          <div class="row col-12 info-article">
+            
+            <!-- Breadcrumb -->
+			{% include 'page-breadcrumb' %}
+
+            <div class="row col-12 content-noticia">
+              <div class="article">
+                <h1>{{ page.title }}</h1>
+                
+                <!-- Texto Editable Bienvenida IMCINE -->
+                <p>
+                  {% editable_text "bienvenida_estimulos", hint: "Texto de Bienvenida a la sección de Estimulos y Apoyos" %}
+					Si buscas apoyo para realizar tu proyecto cinematográfico, el Imcine te puede ayudar a través de los fondos y programas que administra.
+                  {% endeditable_text %}
+                  
+                </p>
+              </div>
+              <div class="ver-mas">
+	            {% link_to el-instituto %}
+                	VER MÁS
+                {% endlink_to %}
+                	
+              </div>             
+            </div><!--finall row col-12 content-noticia-->
+          </div><!--finall row info-noticias-->
+          
+          <div class="row">
+            <div class="col-3 small-banner">
+              <div class="banner-gris">
+                <center><h5>SOLICITAR <br>APOYOS</h5></center>
+              </div>
+            </div>
+            <div class="col-3 small-banner-single">
+              <div class="border-white-single">
+                <center><h6>CONVOCATORIAS</h6></center>
+              </div>
+            </div>
+            <div class="col-3 small-banner-single">
+              <div class="border-white-single">
+                <center><h5>ESTÍMULOS</h5></center>
+              </div>
+            </div>
+            <div class="col-3 small-banner-single">
+              <div class="border-white-single">
+                <center><h5>FIDECINE</h5></center>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-3 small-banner-single">
+              <div class="border-white-single">
+                <center><h5>FOPROCINE</h5></center>
+              </div>
+            </div>
+            <div class="col-3 small-banner-single">
+              <div class="border-white-single">
+                <center><h5>EFICINE</h5></center>
+              </div>
+            </div>
+            <div class="col-3 small-banner-single">
+              <div class="border-white-single">
+                <center><h5>DONATIVOS</h5></center>
+              </div>
+            </div>
+            <div class="col-3 small-banner-single">
+              <div class="border-white-single">
+                <center><h5>GÉNEROS</h5></center>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row col-12 divider"></div>
+
+          	<!-- Festivales -->
+          		{% include 'festivales-principal' %}
+          	<!--finall festivales-->
+
+          	<div class="row col-12 divider"></div>
+
+		  </div><!--finall col-9-->
+		
+        
+        <!-- Sidebar Portada de Sección -->
+        <div class="row col-3" id="sidebar-right-pages">                 
+          {% include 'sidebar-estimulos-y-apoyos' %}
+        </div><!--finall col-3-->
+        
+      </div><!--finall -row-->
+    </div><!--finall container-center-->
+
+	<!-- Footer -->
+	    {% include 'footer' %}
+    <!-- final Footer -->
+  </div><!--final all-site-->
+</div><!--finall panel-content-->
+
+</body>
+</html>

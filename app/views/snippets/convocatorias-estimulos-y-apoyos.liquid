@@ -1,0 +1,11 @@
+<div class="convocatorias-pages">
+	<h4 class="text-center">CONVOCATORIAS</h4>
+	{% for convocatoria in contents.convocatorias limit:6 %}
+
+	<div class="borde-convocatorias-gris">
+      	<img src="{{ 'bullet-cine-convocatorias-gris.png' | theme_image_url }}" class="img">
+      <p><a href="/estimulos-y-apoyos/convocatorias/{{ convocatoria._permalink }}">{{ convocatoria.titulo }}</a></p>
+      <p class="text-convocatorias-gris">{{ convocatoria.fecha | localized_date: '%d/%m/%Y'}}</p>
+	</div>
+  	{% endfor %}
+</div>

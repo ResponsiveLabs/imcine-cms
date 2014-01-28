@@ -1,0 +1,17 @@
+{% paginate contents.convocatorias by 10 %}
+	{% for convocatoria in paginate.collection %}
+      <div class="row convocatorias-info">
+        <div class="pull-left">
+          <img src="{{ convocatoria.imagen_destacada_url | resize: 'x70' }}" class="img">
+        </div>
+        <div class="pull-right">
+          <a href="/estimulos-y-apoyos/convocatorias/{{ convocatoria._permalink }}"><img src="{{ 'ver-mas-convocatorias.png' | theme_image_url }}" class="img"></a>
+        </div>
+        <div class="contenido-conv">
+          <strong>{{ convocatoria.titulo }}</strong><br>
+          <small>{{ convocatoria.fecha | localized_date: '%d/%m/%Y' }}</small>
+        </div>
+      </div>
+	{% endfor %}
+{{ paginate | default_pagination: 'previous_label:Anterior', 'next_label:Siguiente' }}
+{% endpaginate %}

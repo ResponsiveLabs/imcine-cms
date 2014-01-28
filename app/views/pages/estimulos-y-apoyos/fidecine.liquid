@@ -1,0 +1,138 @@
+---
+title: FIDECINE
+slug: fidecine
+handle: fidecine
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 3
+seo_title: FIDECINE
+editable_elements:
+  /bienvenida_convocatorias: <p><span>Fidecine, el Fondo de Inversi&oacute;n y Est&iacute;mulos
+    al Cine, es un fideicomiso de apoyo a la producci&oacute;n, postproducci&oacute;n,
+    distribuci&oacute;n y exhibici&oacute;n de largometrajes (de 75 minutos o m&aacute;s)
+    de ficci&oacute;n y/o animaci&oacute;n que otorga apoyos v&iacute;a capital de
+    riesgo y cr&eacute;ditos.</span></p>
+---
+<!DOCTYPE html>
+<html class="">
+<head>
+	{% include 'head' %}
+</head>
+<body>
+
+<div class="panels ">
+  <div class="panel panel-left">
+  </div>
+</div>
+
+<div class="panel-content">
+  <div class="all-site">
+    
+    <!-- Header -->
+      {% include 'header' %}
+    <!-- final Header -->
+
+ <div class="container-center">
+      <div class="row">
+        <div class=" row col-9 content">
+
+          <div class="row col-12 info-article">
+            
+            <!-- Breadcrumb -->
+			{% include 'page-breadcrumb' %}
+
+            <div class="row col-12 content-noticia">
+              <div class="article">
+                <h1>{{ page.title }}</h1>
+                
+                <!-- Texto Editable Bienvenida IMCINE -->
+                <p>
+                  {% editable_text "bienvenida_convocatorias", hint: "Texto de Bienvenida a la sección FIDECINE" %}
+					Fidecine, el Fondo de Inversión y Estímulos al Cine
+                  {% endeditable_text %}
+                  
+                </p>
+              </div>
+              <div class="ver-mas">
+	            
+                	
+              </div>             
+            </div><!--finall row col-12 content-noticia-->
+            
+            <div class="col-12">
+                <div class="row col-12 share">
+                  <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                  <script>!function(d,s,id){
+                    var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                    if(!d.getElementById(id)){js=d.createElement(s);
+                      js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                      fjs.parentNode.insertBefore(js,fjs);}}
+                      (document, 'script', 'twitter-wjs');
+                  </script>
+
+                  <!-- Place this tag where you want the +1 button to render. -->
+                  <div class="g-plusone"></div>
+
+                  <!-- Place this tag after the last +1 button tag. -->
+                  <script type="text/javascript">
+                    (function() {
+                      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                      po.src = 'https://apis.google.com/js/platform.js';
+                      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                    })();
+                  </script>    
+                </div><!--close row col-12 share-->
+              </div>  
+          </div><!--finall row info-noticias-->
+          
+          <div class="col-12 content-twt-fb">
+            <center><iframe src="http://docs.google.com/gview?url=http://victorpimentel.com/stuff/rubik.pdf&embedded=true" style="width:500px; height:375px;" frameborder="0" class="img"></iframe></center>
+          </div>
+
+          <div class="col-7 cont-sub-menu">
+            <a href="#"><h6>RESULTADOS DE INVITACIÓN 2013</h6></a>
+            <div class="row col-12 divider"></div>
+
+            <a href="#"><h6>REGLAS DE OPERACIÓN FIDECINE</h6></a>
+            <div class="row col-12 divider"></div>
+
+            <a href="#"><h6>LISTA DE LARGOMETRAJES APOYADOS 2012-2013 (OCTUBRE)</h6></a>
+            <div class="row col-12 divider"></div>
+
+            <a href="#"><h6>HOJA DE REGISTRO INVITACIÓN EXTRAORDINARIA 2013</h6></a>
+            <div class="row col-12 divider"></div>
+
+            <a href="#"><h6>INSTRUCTIVO 2013 II</h6></a>
+            <div class="row col-12 divider"></div>
+
+            <a href="#"><h6>FORMATOS INVITACIÓN EXTRAORDINARIA 2013</h6></a>
+            <div class="row col-12 divider"></div>
+
+            <a href="#"><h6>PUBLICACIÓN ESTÍMULOS 2012</h6></a>
+            <div class="row col-12 divider"></div>
+
+            <a href="#"><h6>REQUISITOS PARA SOLICITUD DE ESTÍMULOS POR CORRIDA COMERCIAL 2012</h6></a>
+            <div class="row col-12 divider"></div>
+          </div>
+          
+		</div><!--finall col-9 content-->
+		
+        
+        <!-- Sidebar Portada de Sección -->
+        <div class="row col-3" id="sidebar-right-pages">                 
+          {% include 'sidebar-estimulos-y-apoyos-subp' %}
+        </div><!--finall col-3-->
+        
+      </div><!--finall -row-->
+    </div><!--finall container-center-->
+
+	<!-- Footer -->
+	    {% include 'footer' %}
+    <!-- final Footer -->
+  </div><!--final all-site-->
+</div><!--finall panel-content-->
+
+</body>
+</html>

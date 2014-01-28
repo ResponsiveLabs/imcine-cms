@@ -1,44 +1,21 @@
 <div class="slider1">
   <ul id="slider2">
+    {% for slide in contents.slides %}
     <li>
-      <img src="{{ 'img_slide_cinemaM.jpg' | theme_image_url }}" class="img">
+      <img src="{{ slide.imagen_url }}" class="img">
       <div class="bx-caption">
-        <span><strong>MIRADAS MÚLTIPLES</strong><br>
-          Una inmersión en las imágenes más simbólicas y claves de las películas mexicanas fotografiadas por Gabriel Figueroa, acompañadas por las voces en off de los 40 cinematógrafos más importantes del mundo.</span>
-        <div id="mas-caption"><img src="{{ 'icono-mas.png' | theme_image_url }}" class="img"><a href="#">MÁS</a></div>
+        <span><strong>{{ slide.titulo }}</strong><br>
+          {{ slide.descripcion }}</span>
+        <div id="mas-caption"><img src="{{ 'icono-mas.png' | theme_image_url }}" class="img"><a href="{{ slide.url }}">MÁS</a></div>
       </div> 
     </li>
-    <li>
-      <img src="{{ 'img_slide_cinesecuencias.jpg' | theme_image_url }}" class="img">
-      <div class="bx-caption">
-        <span><strong>MIRADAS MÚLTIPLES</strong><br>
-          Una inmersión en las imágenes más simbólicas y claves de las películas mexicanas fotografiadas por Gabriel Figueroa, acompañadas por las voces en off de los 40 cinematógrafos más importantes del mundo.</span>
-        <div id="mas-caption"><img src="{{ 'icono-mas.png' | theme_image_url }}" class="img"><a href="#">MÁS</a></div>
-      </div> 
-    </li>
-    <li>
-      <img src="{{ 'img_slide_cursos.jpg' | theme_image_url }}" class="img">
-      <div class="bx-caption">
-        <span><strong>MIRADAS MÚLTIPLES</strong><br>
-          Una inmersión en las imágenes más simbólicas y claves de las películas mexicanas fotografiadas por Gabriel Figueroa, acompañadas por las voces en off de los 40 cinematógrafos más importantes del mundo.</span>
-        <div id="mas-caption"><img src="{{ 'icono-mas.png' | theme_image_url }}" class="img"><a href="#">MÁS</a></div>
-      </div> 
-    </li>
-    <li>
-      <img src="{{ 'img_slide_estadisticas.jpg' | theme_image_url }}" class="img">
-      <div class="bx-caption">
-        <span><strong>MIRADAS MÚLTIPLES</strong><br>
-          Una inmersión en las imágenes más simbólicas y claves de las películas mexicanas fotografiadas por Gabriel Figueroa, acompañadas por las voces en off de los 40 cinematógrafos más importantes del mundo.</span>
-        <div id="mas-caption"><img src="{{ 'icono-mas.png' | theme_image_url }}" class="img"><a href="#">MÁS</a></div>
-      </div> 
-    </li>
+    {% endfor %}
   </ul>
   
   <div id="bx-pager2">
-    <p>ESTRENOS</p>
-    <a data-slide-index="0" href="#">1</a>
-    <a data-slide-index="1" href="#">2</a>
-    <a data-slide-index="2" href="#">3</a>
-    <a data-slide-index="3" href="#">4</a>
+    <p>ACTUALIDAD</p>
+    {% for i in (1..contents.slides.count) %}
+    	<a data-slide-index="{{i-1}}" href="#">{{ i }}</a>
+	{% endfor %}
   </div>                 
 </div>

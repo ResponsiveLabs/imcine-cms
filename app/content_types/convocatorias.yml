@@ -2,12 +2,12 @@
 name: Convocatorias
 description: Convocatorias de IMCINE
 slug: convocatorias
-label_field_name: nombre
+label_field_name: titulo
 order_by: fecha
-order_direction: asc
+order_direction: desc
 fields:
-- nombre:
-    label: Nombre
+- titulo:
+    label: Título
     type: string
     required: true
     unique: false
@@ -18,16 +18,22 @@ fields:
     required: true
     unique: false
     localized: false
+- publicado:
+    label: Publicado
+    type: boolean
+    required: false
+    unique: false
+    localized: false
 - imagen:
     label: Imagen
     type: file
     required: false
     unique: false
     localized: false
-- documento:
-    label: Documento
+- imagen_destacada:
+    label: Imagen Destacada
     type: file
-    required: false
+    required: true
     unique: false
     localized: false
 - descripcion:
@@ -37,3 +43,33 @@ fields:
     unique: false
     localized: false
     text_formatting: html
+- documento_1:
+    label: Documento 1
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento_2:
+    label: Documento 2
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento_3:
+    label: Documento 3
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento_4:
+    label: Documento 4
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento_5:
+    label: Documento 5
+    type: file
+    required: false
+    unique: false
+    localized: false

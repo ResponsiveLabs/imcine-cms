@@ -8,5 +8,85 @@ cache_strategy: none
 response_type: text/html
 position: 0
 seo_title: Convocatorias
+editable_elements:
+  /bienvenida_convocatorias: "<p class=\"light\">Todas las convocatorias vigentes
+    para los fondos de apoyo, participaci&oacute;n en festivales, concursos, etc,
+    en un solo clic.</p>\r\n<p class=\"light\">Esta es la lista de las convocatorias
+    vigentes relacionadas con el cine. Toma en cuenta que no todas estas convocatorias
+    son coordinadas por el Imcine, existen muchas que son lanzadas por otros organismos,
+    asociaciones e instituciones. Es preciso que te dirijas a ellas para m&aacute;s
+    informaci&oacute;n.</p>\r\n<p class=\"light\">Si no encuentras lo que buscas,
+    o si conoces de alguna convocatoria que deba aparecer en esta secci&oacute;n,
+    por favor escr&iacute;benos y env&iacute;anos todos los detalles para publicarla.</p>"
 ---
-{% extends 'parent' %}
+<!DOCTYPE html>
+<html class="">
+<head>
+	{% include 'head' %}
+</head>
+<body>
+
+<div class="panels ">
+  <div class="panel panel-left">
+  </div>
+</div>
+
+<div class="panel-content">
+  <div class="all-site">
+    
+    <!-- Header -->
+      {% include 'header' %}
+    <!-- final Header -->
+
+ <div class="container-center">
+      <div class="row">
+        <div class=" row col-9 content">
+
+          <div class="row col-12 info-article">
+            
+            <!-- Breadcrumb -->
+			{% include 'page-breadcrumb' %}
+
+            <div class="row col-12 content-noticia">
+              <div class="article">
+                <h1>{{ page.title }}</h1>
+                
+                <!-- Texto Editable Bienvenida IMCINE -->
+                <p>
+                  {% editable_text "bienvenida_convocatorias", hint: "Texto de Bienvenida a la sección de Convocatorias" %}
+					Todas las convocatorias vigentes para los fondos de apoyo, participación en festivales, concursos, etc, en un solo clic.
+                  {% endeditable_text %}
+                  
+                </p>
+              </div>
+              <div class="ver-mas">
+	            
+                	
+              </div>             
+            </div><!--finall row col-12 content-noticia-->
+            
+            <div class="row col-12 convocatories">
+              {% include 'listado-convocatorias' %}
+            </div><!-- Fin row col-12 convocatorias -->
+         
+            
+          </div><!--finall row info-noticias-->
+		</div><!--finall col-9 content-->
+		
+        
+        <!-- Sidebar Portada de Sección -->
+        <div class="row col-3" id="sidebar-right-pages">                 
+          {% include 'sidebar-estimulos-y-apoyos-subp' %}
+        </div><!--finall col-3-->
+        
+      </div><!--finall -row-->
+    </div><!--finall container-center-->
+
+	<!-- Footer -->
+	    {% include 'footer' %}
+    <!-- final Footer -->
+  </div><!--final all-site-->
+</div><!--finall panel-content-->
+
+</body>
+</html>

@@ -1,11 +1,225 @@
 ---
 title: CINE NACIONAL
 slug: cine-nacional
+handle: cine-nacional
 listed: true
 published: true
 cache_strategy: none
 response_type: text/html
 position: 2
 seo_title: Cine Nacional
+editable_elements:
+  /bienvenida_estimulos: '<p><span>Encuentra aqu&iacute; las pel&iacute;culas mexicanas
+    que hoy est&aacute;n en pantalla: ya sea en las salas de cine comercial, movi&eacute;ndose
+    en circuitos culturales, festivales y mercados, o ciclos y muestras en M&eacute;xico
+    y al rededor del mundo.</span></p>'
 ---
-{% extends 'parent' %}
+<!DOCTYPE html>
+<html class="">
+<head>
+	{% include 'head' %}
+</head>
+<body>
+
+<div class="panels ">
+  <div class="panel panel-left">
+  </div>
+</div>
+
+<div class="panel-content">
+  <div class="all-site">
+    
+    <!-- Header -->
+      {% include 'header' %}
+    <!-- final Header -->
+
+ <div class="container-center">
+      <div class="row">
+        <div class=" row col-9 content">
+
+          <div class="row col-12 info-article">
+            
+            <!-- Breadcrumb -->
+			{% include 'page-breadcrumb' %}
+
+            <div class="row col-12 content-noticia">
+              <div class="article">
+                <h1>{{ page.title }}</h1>
+                
+                <!-- Texto Editable Bienvenida IMCINE -->
+                <p>
+                  {% editable_text "bienvenida_estimulos", hint: "Texto de Bienvenida a la sección de Cine Nacional" %}
+					Encuentra aquí las películas mexicanas que hoy están en pantalla
+                  {% endeditable_text %}
+                  
+                </p>
+              </div>
+              <div class="ver-mas">
+	            {% link_to el-instituto %}
+                	VER MÁS
+                {% endlink_to %}
+                	
+              </div>             
+            </div><!--finall row col-12 content-noticia-->
+          </div><!--finall row info-noticias-->
+
+		  <div class="row">
+            <a href="#"><div class="col-3 small-banner">
+              <div class="banner-gris">
+                <center><h5>FESTIVALES</h5></center>
+              </div>
+            </div></a>
+            <a href="#"><div class="col-3 small-banner">
+              <div class="banner-gris">
+                <center><h5>PUBLICACIONES</h5></center>
+              </div>
+            </div></a>
+            <a href="#"><div class="col-3 small-banner">
+              <div class="banner-gris">
+                <center><h6>LÍNEA DE TIEMPO</h6></center>
+              </div>
+            </div></a>
+            <a href="#"><div class="col-3 small-banner">
+              <div class="banner-gris">
+                <center><h5>CICLOS</h5></center>
+              </div>
+            </div></a>
+          </div>
+
+          <div class="row">
+            <a href="#"><div class="col-3 small-banner">
+              <div class="banner-gris">
+                <center><h5>PREMIOS</h5></center>
+              </div>
+            </div></a>
+            <a href="#"><div class="col-3 small-banner">
+              <div class="banner-gris">
+                <center><h5>CREADORES</h5></center>
+              </div>
+            </div></a>
+            <a href="#"><div class="col-3 small-banner">
+              <div class="banner-gris">
+                <center><h5>ESTUDIOS</h5></center>
+              </div>
+            </div></a>
+            <a href="#"><div class="col-3 small-banner">
+              <div class="banner-gris">
+                <center><h5>EXPOSICIONES</h5></center>
+              </div>
+            </div></a>
+          </div>
+
+          <div class="row col-12 divider"></div>
+
+         
+          
+          <div class="col-6 leyes1">
+              <h3>PELÍCULAS</h3>
+          </div>
+          <div class="col-6 ver-peliculas">
+            <a href="#">MÁS</a>
+          </div>
+
+          <div class="col-4 exitos">
+            <img src="{{ 'movie1.jpg' | theme_image_url }}" class="img">
+            <h5>LOS FABULOSOS 7</h5>
+            <span>Fernando Sariñana</span><br>
+            <span>2013</span>
+          </div>
+
+          <div class="col-4 exitos"> 
+            <img src="{{ 'movie2.jpg' | theme_image_url }}" class="img">
+            <h5>ACTORES, S.A.</h5>
+            <span>Carlos González Sariñana</span><br>
+            <span>2008</span>
+          </div>
+
+          <div class="col-4 exitos"> 
+            <img src="{{ 'movie3.jpg' | theme_image_url }}" class="img">
+            <h5>EL SECRETO DEL MEDALLÓN DE...</h5>
+            <span>Rodolfo Guzmán</span><br>
+            <span>Leopoldo Aguilar</span><br>
+            <span>2011</span>
+          </div>
+
+          <div class="col-4 exitos"> 
+            <img src="{{ 'movie1.jpg' | theme_image_url }}" class="img">
+            <h5>LOS FABULOSOS 7</h5>
+            <span>Fernando Sariñana</span><br>
+            <span>2013</span>
+          </div>
+
+          <div class="col-4 exitos"> 
+            <img src="{{ 'movie2.jpg' | theme_image_url }}" class="img">
+            <h5>ACTORES, S.A.</h5>
+            <span>Carlos González Sariñana</span><br>
+            <span>2008</span>
+          </div>
+
+          <div class="col-4 exitos"> 
+            <img src="{{ 'movie3.jpg' | theme_image_url }}" class="img">
+            <h5>EL SECRETO DEL MEDALLÓN DE...</h5>
+            <span>Rodolfo Guzmán</span><br>
+            <span>Leopoldo Aguilar</span><br>
+            <span>2011</span>
+          </div>
+
+          <div class="row pagination">
+            <p><strong>1 2 3 4 ...></strong></p>
+          </div>
+          
+          <div class="row col-12 divider"></div>
+   
+   		  <div class="col-12 content-twt-fb">
+            <div class="col-6 cont-1">
+              <div class="twitter">
+                <a class="twitter-timeline" href="https://twitter.com/IMCINE" data-widget-id="408997573496545280">Tweets por @IMCINE</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+              </div><!--finall twitter-->
+            </div>
+
+            <div class="col-6 cont-2">
+              <div class="facebook">
+                <img src="{{ 'widget-facebook.jpg' | theme_image_url }}" class="img">
+              </div>
+            </div>
+          </div><!-- Final col-12 content-twt-fb -->
+
+          <div class="row col-12 divider"></div>
+
+          <div class="col-12 actividades">
+            <h4>ACTIVIDADES ANTERIORES</h4>
+            <div class="col-4 ant">
+              <p>2° FESTIVAL INTERNACIONAL DE CINE INDEPENDIENTE DE POZOS</p><br>
+              <a href="#"><span>ver más</span></a>
+            </div>
+            <div class="col-4 ant">
+              <p>7° FESTIVAL DE LA MEMORIA DOCUMENTAL IBEROAMERICANO.</p><br>
+              <a href="#"><span>ver más</span></a>
+            </div>
+            <div class="col-4 without-border">
+              <p>2° BAJA INTERNACIONAL FILM FESTIVAL</p><br>
+              <a href="#"><span>ver más</span></a>
+            </div>
+          </div>
+
+		</div><!--finall col-9-->
+		
+        
+        <!-- Sidebar Portada de Sección -->
+        <div class="row col-3" id="sidebar-right-pages">                 
+          {% include 'sidebar-cine-nacional' %}
+        </div><!--finall col-3-->
+        
+      </div><!--finall -row-->
+    </div><!--finall container-center-->
+
+	<!-- Footer -->
+	    {% include 'footer' %}
+    <!-- final Footer -->
+  </div><!--final all-site-->
+</div><!--finall panel-content-->
+
+</body>
+</html>

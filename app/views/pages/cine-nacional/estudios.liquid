@@ -1,0 +1,119 @@
+---
+title: ESTUDIOS
+slug: estudios
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 10
+seo_title: ESTUDIOS
+editable_elements:
+  /bienvenida_convocatorias: Aquí podrás descargar más información acerca de Imcine.
+---
+<!DOCTYPE html>
+<html class="">
+<head>
+	{% include 'head' %}
+</head>
+<body>
+
+<div class="panels ">
+  <div class="panel panel-left">
+  </div>
+</div>
+
+<div class="panel-content">
+  <div class="all-site">
+    
+    <!-- Header -->
+      {% include 'header' %}
+    <!-- final Header -->
+
+ <div class="container-center">
+      <div class="row">
+        <div class=" row col-9 content">
+
+          <div class="row col-12 info-article">
+            
+            <!-- Breadcrumb -->
+			{% include 'page-breadcrumb' %}
+
+            <div class="row col-12 content-noticia">
+              <div class="article">
+                <h1>{{ page.title }}</h1>
+                
+                <!-- Texto Editable Bienvenida Creadores Cinematográficos -->
+                <p>
+                  {% editable_text "bienvenida_convocatorias", hint: "Texto de Bienvenida a la sección 'Creadores Cinematográficos'" %}
+					Aquí podrás descargar más información acerca de Imcine.
+                  {% endeditable_text %}
+                </p>
+              </div>
+              <div class="ver-mas">
+              </div>             
+            </div><!--finall row col-12 content-noticia-->
+          </div><!--finall row info-noticias-->
+
+          <div class="row ">
+            <div class="col-12">
+              <div class="row col-12 share-estudios">
+                  <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                  <script>!function(d,s,id){
+                    var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                    if(!d.getElementById(id)){js=d.createElement(s);
+                      js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                      fjs.parentNode.insertBefore(js,fjs);}}
+                      (document, 'script', 'twitter-wjs');
+                  </script>
+
+                  <!-- Place this tag where you want the +1 button to render. -->
+                  <div class="g-plusone"></div>
+
+                  <!-- Place this tag after the last +1 button tag. -->
+                  <script type="text/javascript">
+                    (function() {
+                      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                      po.src = 'https://apis.google.com/js/platform.js';
+                      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                    })();
+                  </script>    
+                </div><!--close row col-12 share-->
+            </div>
+            <div class="col-12 convocatorias-info">
+              <div class="pull-left">
+                <img src="{{ 'anuario.jpg' | theme_image_url }}" class="img">
+              </div>
+			  <div class="pull-right">
+                <ul class="ver-descargar">
+                  <li><a href="#"><img src="{{ 'ver-publicaciones.png' | theme_image_url }}" class="img"></a></li>
+                  <li><a href="#"><img src="{{ 'descargar-publicaciones.png' | theme_image_url }}" class="img"></a></li>
+                </ul>
+              </div>
+              <div class="contenido-conv">
+                <strong><h3>Anuario Estadístico de Cine Mexicano 2011</h3></strong>
+                <small>Consejo Nacional Para la Cultura y las Artes, Instituto Mexicano de Cinematografía y Área de
+                      Investigación Estratégica. Análisis y Prospectiva 2012.</small>
+              </div>
+            </div>
+            <center><img src="{{ 'ocupado.jpg' | theme_image_url }}" class="img"></center>
+          </div>
+          
+		</div><!--finall col-9 content-->
+		
+        
+        <!-- Sidebar Portada de Sección -->
+        <div class="row col-3" id="sidebar-right-pages">                 
+          {% include 'sidebar-cine-nacional-subpaginas' %}
+        </div><!--finall col-3-->
+        
+      </div><!--finall -row-->
+    </div><!--finall container-center-->
+
+	<!-- Footer -->
+	    {% include 'footer' %}
+    <!-- final Footer -->
+  </div><!--final all-site-->
+</div><!--finall panel-content-->
+
+</body>
+</html>

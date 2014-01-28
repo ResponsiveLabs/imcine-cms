@@ -8,7 +8,7 @@
       <li>
         <div class="wrap">
           <figure>
-            <img src="{{ foto.imagen_url }}" class="img carrusel-img">
+            <img src="{{ foto.imagen_url | resize: 'x80' }}" class="img carrusel-img">
           </figure>
           <p>{{ foto.titulo }}</p>
         </div>

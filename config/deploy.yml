@@ -1,0 +1,11 @@
+development:
+  host: localhost:8080
+  api_key: 03b319183171b0fefd910183fce355654be0d39e
+staging:
+  host: imcine-staging.herokuapp.com
+  api_key: f2ed39018fb811c0877b9efb2f4f0e9a3feccd2f
+production:
+  host: www.example.com
+  email: john@doe.net
+  password: apassword
+  # api_key: <your api key here>

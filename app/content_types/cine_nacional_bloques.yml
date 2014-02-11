@@ -1,0 +1,80 @@
+---
+name: Cine Nacional - Bloques
+slug: cine_nacional_bloques
+label_field_name: titulo
+order_by: manually
+order_direction: asc
+fields:
+- titulo:
+    label: Título
+    type: string
+    required: true
+    unique: false
+    localized: false
+- descripcion:
+    label: Descripción
+    type: text
+    required: false
+    unique: false
+    localized: false
+    text_formatting: html
+- fecha_inicio:
+    label: Fecha Inicio
+    type: date_time
+    required: true
+    unique: false
+    localized: false
+- fecha_cierre:
+    label: Fecha Cierre
+    type: date_time
+    required: true
+    unique: false
+    localized: false
+- contacto:
+    label: Contacto
+    type: email
+    required: false
+    unique: false
+    localized: false
+- imagen:
+    label: Imagen
+    type: file
+    required: false
+    unique: false
+    localized: false
+- url:
+    label: URL
+    type: string
+    required: false
+    unique: false
+    localized: false
+- documento_1:
+    label: Documento 1
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento_2:
+    label: Documento 2
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento_3:
+    label: Documento 3
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento_4:
+    label: Documento 4
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento_5:
+    label: Documento 5
+    type: file
+    required: false
+    unique: false
+    localized: false

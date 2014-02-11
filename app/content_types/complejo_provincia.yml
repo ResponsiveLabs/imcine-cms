@@ -1,0 +1,39 @@
+---
+name: Complejo Provincia
+slug: complejo_provincia
+label_field_name: nombre
+order_by: nombre
+order_direction: asc
+fields:
+- nombre:
+    label: Nombre
+    type: string
+    required: true
+    unique: false
+    localized: false
+- ciudad:
+    label: Ciudad
+    type: string
+    required: false
+    unique: false
+    localized: false
+- estado:
+    label: Estado
+    type: string
+    required: false
+    unique: false
+    localized: false
+- url:
+    label: URL
+    type: string
+    required: false
+    unique: false
+    localized: false
+- marca:
+    label: Marca
+    type: belongs_to
+    required: false
+    unique: false
+    localized: false
+    class_name: marca
+    ui_enabled: true

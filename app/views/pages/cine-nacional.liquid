@@ -63,55 +63,8 @@ editable_elements:
             </div><!--finall row col-12 content-noticia-->
           </div><!--finall row info-noticias-->
 
-		  <div class="row">
-            <a href="#"><div class="col-3 small-banner">
-              <div class="banner-gris">
-                <center><h5>FESTIVALES</h5></center>
-              </div>
-            </div></a>
-            <a href="#"><div class="col-3 small-banner">
-              <div class="banner-gris">
-                <center><h5>PUBLICACIONES</h5></center>
-              </div>
-            </div></a>
-            <a href="#"><div class="col-3 small-banner">
-              <div class="banner-gris">
-                <center><h6>LÍNEA DE TIEMPO</h6></center>
-              </div>
-            </div></a>
-            <a href="#"><div class="col-3 small-banner">
-              <div class="banner-gris">
-                <center><h5>CICLOS</h5></center>
-              </div>
-            </div></a>
-          </div>
-
-          <div class="row">
-            <a href="#"><div class="col-3 small-banner">
-              <div class="banner-gris">
-                <center><h5>PREMIOS</h5></center>
-              </div>
-            </div></a>
-            <a href="#"><div class="col-3 small-banner">
-              <div class="banner-gris">
-                <center><h5>CREADORES</h5></center>
-              </div>
-            </div></a>
-            <a href="#"><div class="col-3 small-banner">
-              <div class="banner-gris">
-                <center><h5>ESTUDIOS</h5></center>
-              </div>
-            </div></a>
-            <a href="#"><div class="col-3 small-banner">
-              <div class="banner-gris">
-                <center><h5>EXPOSICIONES</h5></center>
-              </div>
-            </div></a>
-          </div>
-
-          <div class="row col-12 divider"></div>
-
-         
+          <!-- Bloques grises Cine Nacional -->
+          {% include 'bloques-cine-nacional' %}
           
           <div class="col-6 leyes1">
               <h3>PELÍCULAS</h3>
@@ -120,7 +73,9 @@ editable_elements:
             <a href="#">MÁS</a>
           </div>
 
-          <div class="col-4 exitos">
+          {% include 'cartelera' %}
+          
+          <!--div class="col-4 exitos">
             <img src="{{ 'movie1.jpg' | theme_image_url }}" class="img">
             <h5>LOS FABULOSOS 7</h5>
             <span>Fernando Sariñana</span><br>
@@ -162,7 +117,7 @@ editable_elements:
             <span>Rodolfo Guzmán</span><br>
             <span>Leopoldo Aguilar</span><br>
             <span>2011</span>
-          </div>
+          </div-->
 
           <div class="row pagination">
             <p><strong>1 2 3 4 ...></strong></p>

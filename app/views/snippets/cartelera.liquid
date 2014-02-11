@@ -1,0 +1,15 @@
+<div class="col-6 leyes1">
+<h3>PELÍCULAS</h3>
+</div>
+<div class="col-6 ver-peliculas">
+<a href="#">MÁS</a>
+</div>
+
+<div class="col-4 exitos">
+{% for peli in contents.pelicula %}
+<img src="{{ peli.imagen_url }}" class="img">
+<h5>{{ peli.imagen_url }}</h5>
+<span>Fernando Sariñana</span><br>
+<span>2013</span>
+  {% endfor %}
+</div>

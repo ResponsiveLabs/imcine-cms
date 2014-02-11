@@ -1,0 +1,19 @@
+{% paginate contents.estudios by 10 %} 
+  {% for estudio in paginate.collection %}
+<div class="col-12 convocatorias-info">
+  <div class="pull-left">
+    <img src="{{ estudio.imagen_destacada_url | x117 }}" class="img">
+  </div>
+  <div class="pull-right">
+    <ul class="ver-descargar">
+      <li><a href="#"><img src="{{ 'ver-publicaciones.png' | theme_image_url }}" class="img"></a></li>
+      <li><a href="#"><img src="{{ 'descargar-publicaciones.png' | theme_image_url }}" class="img"></a></li>
+    </ul>
+  </div>
+  <div class="contenido-conv">
+    <strong><h3>{{ estudio.titulo}}</h3></strong>
+    <small>{{ estudio.descripcion }}</small>
+  </div>
+</div>
+ {% endfor %}
+{% endpaginate %}

@@ -1,0 +1,38 @@
+---
+name: Index Accesos Directos
+slug: index_accesos_directos
+label_field_name: titulo
+order_by: manually
+order_direction: asc
+fields:
+- titulo:
+    label: Título
+    type: string
+    required: true
+    unique: false
+    localized: false
+- descripcion:
+    label: Descripción
+    type: text
+    required: false
+    unique: false
+    localized: false
+    text_formatting: html
+- fecha:
+    label: Fecha
+    type: date_time
+    required: false
+    unique: false
+    localized: false
+- imagen:
+    label: Imagen
+    type: file
+    required: false
+    unique: false
+    localized: false
+- url:
+    label: URL
+    type: string
+    required: false
+    unique: false
+    localized: false

@@ -1,0 +1,41 @@
+---
+- FESTIVALES:
+    _slug: festivales
+    descripcion: ''
+    fecha_inicio: 01/29/2014 00:00
+    fecha_cierre: 01/31/2014 00:00
+- PUBLICACIONES:
+    _slug: publicaciones
+    descripcion: ''
+    fecha_inicio: 01/29/2014 00:00
+    fecha_cierre: 01/31/2014 00:00
+- LÍNEA DE TIEMPO:
+    _slug: linea-de-tiempo
+    descripcion: ''
+    fecha_inicio: 01/29/2014 00:00
+    fecha_cierre: 01/31/2014 00:00
+- CICLOS:
+    _slug: ciclos
+    descripcion: ''
+    fecha_inicio: 01/29/2014 00:00
+    fecha_cierre: 01/31/2014 00:00
+- PREMIOS:
+    _slug: premios
+    descripcion: ''
+    fecha_inicio: 01/29/2014 00:00
+    fecha_cierre: 01/31/2014 00:00
+- CREADORES:
+    _slug: creadores
+    descripcion: ''
+    fecha_inicio: 01/29/2014 00:00
+    fecha_cierre: 01/31/2014 00:00
+- ESTUDIOS:
+    _slug: estudios
+    descripcion: ''
+    fecha_inicio: 01/29/2014 00:00
+    fecha_cierre: 01/31/2014 00:00
+- EXPOSICIONES:
+    _slug: exposiciones
+    descripcion: ''
+    fecha_inicio: 01/29/2014 00:00
+    fecha_cierre: 01/31/2014 00:00

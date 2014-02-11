@@ -20,5 +20,5 @@ fields:
     localized: false
     class_name: noticias
     order_by:
-    - created_at
-    - desc
+    - position_in_categoria
+    - asc

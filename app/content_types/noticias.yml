@@ -3,7 +3,7 @@ name: Noticias
 description: Noticias
 slug: noticias
 label_field_name: titulo
-order_by: created_at
+order_by: manually
 order_direction: desc
 group_by: categoria
 fields:
@@ -62,3 +62,39 @@ fields:
     localized: false
     class_name: categorias
     ui_enabled: true
+- fuente:
+    label: Fuente
+    type: string
+    required: false
+    unique: false
+    localized: false
+- documento1:
+    label: Documento1
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento2:
+    label: Documento2
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento3:
+    label: Documento3
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento4:
+    label: Documento4
+    type: file
+    required: false
+    unique: false
+    localized: false
+- documento5:
+    label: Documento5
+    type: file
+    required: false
+    unique: false
+    localized: false

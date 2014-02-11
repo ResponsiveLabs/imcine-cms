@@ -1,21 +1,14 @@
-<div class="slider1">
-  <ul id="slider2">
-    {% for slide in contents.slides %}
-    <li>
-      <img src="{{ slide.imagen_url }}" class="img">
-      <div class="bx-caption">
-        <span><strong>{{ slide.titulo }}</strong><br>
-          {{ slide.descripcion }}</span>
-        <div id="mas-caption"><img src="{{ 'icono-mas.png' | theme_image_url }}" class="img"><a href="{{ slide.url }}">MÁS</a></div>
-      </div> 
-    </li>
-    {% endfor %}
-  </ul>
+<div id="featured"> 
+  {% for slide in contents.slides %}
+  <img src="{{ slide.imagen_url }}"  class="img" data-caption="{{slide._slug}}">
   
-  <div id="bx-pager2">
-    <p>ACTUALIDAD</p>
-    {% for i in (1..contents.slides.count) %}
-    	<a data-slide-index="{{i-1}}" href="#">{{ i }}</a>
-	{% endfor %}
-  </div>                 
+	<!-- Captions for Orbit -->
+  
+  <span class="orbit-caption" id="{{slide._slug}}">
+    <strong>{{ slide.titulo }}</strong>
+    <br>{{ slide.descripcion }}
+  </span>
+  {% endfor %}
 </div>
+
+

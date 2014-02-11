@@ -2,11 +2,11 @@
  <div class="container-center" style="padding-top: 35px;">
     <div class="col-12">
       <div class="pull-left">
-        <a href="/"><img src="{{ 'logo-sep.jpg' | theme_image_url }}" class="img"></a>
+        <a href="#"><img src="{{ 'logo-sep.jpg' | theme_image_url }}" class="img"></a>
       </div>
       
       <div class="pull-right">
-        <img src="{{ 'logo-imcine.jpg' | theme_image_url }}" class="img">
+        <a href="#"><img src="{{ 'logo-imcine.jpg' | theme_image_url }}" class="img"></a>
       </div>
     </div>
     
@@ -20,7 +20,10 @@
                 <nav id="menu">
                   <ul class="nav">
                   	<!-- Menú NAV -->
-                  	{% nav 'index', depth: 1, no_wrapper: true, exclude: nil, icon: false, active_class: active-menu %}
+                      <li {% if page.slug == "index" %}class="active-menu"{% endif %}>
+                  		<a href="/">INICIO</a>
+                	  </li>
+                  	{% nav 'index', depth: 2, no_wrapper: true, exclude: nil, icon: false, active_class: active-menu %}
                   </ul>
                 </nav>
               </div>
@@ -40,8 +43,6 @@
       
     </div><!--finall navigation-->
     <div class="pull-right" id="idioma">
-      <a><img src="{{ 'Amenos.png' | theme_image_url }}" class="img"></a>
-      <a><img src="{{ 'Amas.png' | theme_image_url }}" class="img"></a>
       <a><img src="{{ 'ES.png' | theme_image_url }}" class="img"></a>
       <a><img src="{{ 'EN.png' | theme_image_url }}" class="img"></a>
     </div>

@@ -1,7 +1,7 @@
 ---
 title: INICIO
 handle: inicio
-listed: false
+listed: true
 published: true
 cache_strategy: none
 response_type: text/html
@@ -47,52 +47,7 @@ position: 0
 
           
           <!-- Accesos Directos - Página Principal -->
-          <div class="row content2">
-            <div class="row col-4" id="cine">
-              <div class="cine">
-                <div class="over-cont-cine">
-                  <a href="#" id="text-cine"><p class="text-center">CURSOS <br>Y TALLERES</p></a>
-                </div>
-              </div> 
-            </div>
-            <div class="row col-4" id="cine">
-              <div class="cine">
-                <div class="over-cont-cine">
-                  <a href="#"><p class="text-center">OBSERVATORIO<br> Y ESTADÍSTICAS</p></a>
-                </div>
-              </div> 
-            </div>
-            <div class="row col-4" id="cine">
-              <div class="cine">
-                <div class="over-cont-cine">
-                  <a href="#"><p class="text-center">CINEMA<br> MÉXICO</p></a>
-                </div>
-              </div> 
-            </div>
-            <div class="row col-4" id="cine">
-              <div class="cine">
-                <div class="over-cont-cine">
-                  <a href="#"><p class="text-center" id="one-line">COMEFILM</p></a>
-                </div>
-              </div> 
-            </div>
-            <div class="row col-4" id="cine">
-              <div class="cine">
-                <div class="over-cont-cine">
-                  <a href="#"><p class="text-center">CINE EN TU<br> COMUNIDAD</p></a>
-                </div>
-              </div> 
-            </div>
-            <div class="row col-4" id="cine">
-              <div class="cine">
-                <div class="over-cont-cine">
-                  <a href="#"><p class="text-center" id="one-line">CINESECUENCIAS</p></a>
-                </div>
-              </div> 
-            </div>
-          </div>
-          
-          <!--finall content2-->
+          {% include 'accesos-directos-index' %}
 
         </div><!--finall col-12-->
 
@@ -129,9 +84,44 @@ position: 0
 
 <!-- Javascripts Página Principal -->
   
-<script>
+  <!-- Run the plugin Slider principal -->
+    <script type="text/javascript">
+      $(window).load(function() {
+        $('#featured').orbit({
+          captions: true
+        });
+      });
+    </script>
+  <!-- Fin Slider Principal -- >
 
-$(document).ready(function(){
+  <!-- Carousel Slider -->
+    <script>
+      $(document).ready(function(){
+
+        $(function() {
+          $(".anyClass").jCarouselLite({
+            btnNext: ".next",
+            btnPrev: ".prev"
+          });
+        });
+      });
+    </script>
+  <!--Fin carousel Slider-->
+
+  <!-- Slider Noticias -->
+    <script type="text/javascript">
+      $(window).load(function() {
+        $('#featured-noticias').orbit({
+          captions: true,
+          animation: 'fade'
+        });
+      });
+    </script>
+  <!-- Fin Slider Noticias -- >
+  
+<!--script>
+
+  $(document).ready(function(){
 
 	$('#slider1').bxSlider({
 	  mode: 'fade',
@@ -159,7 +149,7 @@ $(document).ready(function(){
 
 });
 
-</script>
+</script-->
 
 </body>
 </html>

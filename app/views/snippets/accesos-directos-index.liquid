@@ -1,0 +1,11 @@
+<div class="row content2">
+  {% for acceso in contents.index_accesos_directos limit:6 %}
+  <div class="row col-4" id="cine">
+    <div class="cine">
+      <div class="over-cont-cine">
+        <a href="#" id="text-cine"><p class="text-center">{{ acceso.titulo }}</p></a>
+      </div>
+    </div> 
+  </div>
+  {% endfor %}
+</div>

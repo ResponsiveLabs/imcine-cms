@@ -1,0 +1,31 @@
+---
+name: Película Cartelera
+slug: pelicula_cartelera
+label_field_name: pelicula
+order_by: created_at
+order_direction: asc
+fields:
+- pelicula:
+    label: Película
+    type: belongs_to
+    required: true
+    unique: false
+    localized: false
+    class_name: pelicula
+    ui_enabled: true
+- complejo_df:
+    label: Complejo DF
+    type: belongs_to
+    required: false
+    unique: false
+    localized: false
+    class_name: complejo_d_f
+    ui_enabled: true
+- complejo_provincia:
+    label: Complejo Provincia
+    type: belongs_to
+    required: false
+    unique: false
+    localized: false
+    class_name: complejo_provincia
+    ui_enabled: true

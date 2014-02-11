@@ -2,7 +2,7 @@
 name: Slides
 description: Imágenes para el slider principal
 slug: slides
-label_field_name: descripcion
+label_field_name: titulo
 order_by: manually
 order_direction: asc
 fields:

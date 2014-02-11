@@ -3,7 +3,7 @@ name: Convocatorias
 description: Convocatorias de IMCINE
 slug: convocatorias
 label_field_name: titulo
-order_by: fecha
+order_by: manually
 order_direction: desc
 fields:
 - titulo:
@@ -15,6 +15,12 @@ fields:
 - fecha:
     label: Fecha
     type: date
+    required: true
+    unique: false
+    localized: false
+- fecha_cierre:
+    label: Fecha Cierre
+    type: date_time
     required: true
     unique: false
     localized: false

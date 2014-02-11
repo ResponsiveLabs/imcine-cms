@@ -1,0 +1,11 @@
+<div class="row">
+  {% for bloque in contents.cine_nacional_bloques limit:8 %}
+  <a href="#"><div class="col-3 small-banner">
+    <div class="banner-gris">
+      <center><h5>{{ bloque.titulo }}</h5></center>
+    </div>
+  </div></a>
+  {% endfor %}
+</div>
+
+<div class="row col-12 divider"></div>

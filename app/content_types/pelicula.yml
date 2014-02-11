@@ -1,0 +1,32 @@
+---
+name: Película
+slug: pelicula
+label_field_name: nombre
+order_by: created_at
+order_direction: asc
+fields:
+- nombre:
+    label: Nombre
+    type: string
+    required: true
+    unique: false
+    localized: false
+- descripcion:
+    label: Descripción
+    type: text
+    required: false
+    unique: false
+    localized: false
+    text_formatting: html
+- imagen:
+    label: Imágen
+    type: file
+    required: false
+    unique: false
+    localized: false
+- url:
+    label: URL
+    type: string
+    required: false
+    unique: false
+    localized: false

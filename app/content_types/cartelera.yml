@@ -1,0 +1,28 @@
+---
+name: Cartelera
+slug: cartelera
+label_field_name: nombre
+order_by: created_at
+order_direction: asc
+fields:
+- nombre:
+    label: Nombre
+    type: string
+    required: true
+    unique: false
+    localized: false
+- fecha:
+    label: Fecha
+    type: date
+    required: true
+    unique: false
+    localized: false
+- peliculas:
+    label: Películas
+    type: has_many
+    required: true
+    unique: false
+    localized: false
+    class_name: pelicula_cartelera
+    inverse_of: pelicula
+    ui_enabled: true

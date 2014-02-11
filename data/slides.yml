@@ -1,33 +1,33 @@
 ---
-- ? <p>Una inmersi&oacute;n en las im&aacute;genes m&aacute;s simb&oacute;licas y
-    claves de las pel&iacute;culas mexicanas fotografiadas por Gabriel Figueroa, acompa&ntilde;adas
-    por las voces en off de los 40 cinemat&oacute;grafos m&aacute;s importantes del
-    mundo.</p>
-  : _slug: una-inmersion-en-las-imagenes-mas-simbolicas-y-claves-de-las-peliculas-mexicanas-fotografiadas-por-gabriel-figueroa-acompanadas-por-las-voces-en-off-de-los-40-cinematografos-mas-importantes-del-mundo
-    titulo: MIRADAS MÚLTIPLES
+- MIRADAS MÚLTIPLES:
+    _slug: una-inmersion-en-las-imagenes-mas-simbolicas-y-claves-de-las-peliculas-mexicanas-fotografiadas-por-gabriel-figueroa-acompanadas-por-las-voces-en-off-de-los-40-cinematografos-mas-importantes-del-mundo
+    descripcion: <p><span>El hijo de militantes comunistas mexicanos, promotor del
+      socialismo y la Revoluci&oacute;n Cubana, con un gran parecido f&iacute;sico
+      e ideol&oacute;gico al Che Guevara, al enfrentarse a una enfermedad mortal,
+      -decide</span></p>
     url: http://imcine-staging.herokuapp.com/estimulos-y-apoyos
     imagen: /samples/slides/una-inmersion-en-las-imagenes-mas-simbolicas-y-claves-de-las-peliculas-mexicanas-fotografiadas-por-gabriel-figueroa-acompanadas-por-las-voces-en-off-de-los-40-cinematografos-mas-importantes-del-mundo/img_slide_cinemaM.jpg
-- ? <p>Una inmersi&oacute;n en las im&aacute;genes m&aacute;s simb&oacute;licas y
-    claves de las pel&iacute;culas mexicanas fotografiadas por Gabriel Figueroa, acompa&ntilde;adas
-    por las voces en off de los 40 cinemat&oacute;grafos m&aacute;s importantes del
-    mundo.</p>
-  : _slug: una-inmersion-en-las-imagenes-mas-simbolicas-y-claves-de-las-peliculas-mexicanas-fotografiadas-por-gabriel-figueroa-acompanadas-por-las-voces-en-off-de-los-40-cinematografos-mas-importantes-del-mundo-1
-    titulo: MIRADAS MÚTIPLES 2
+- MIRADAS MÚTIPLES 2:
+    _slug: una-inmersion-en-las-imagenes-mas-simbolicas-y-claves-de-las-peliculas-mexicanas-fotografiadas-por-gabriel-figueroa-acompanadas-por-las-voces-en-off-de-los-40-cinematografos-mas-importantes-del-mundo-1
+    descripcion: <p>Una inmersi&oacute;n en las im&aacute;genes m&aacute;s simb&oacute;licas
+      y claves de las pel&iacute;culas mexicanas fotografiadas por Gabriel Figueroa,
+      acompa&ntilde;adas por las voces en off de los 40 cinemat&oacute;grafos m&aacute;s
+      importantes del mundo.</p>
     url: http://imcine-staging.herokuapp.com/cine-nacional
     imagen: /samples/slides/una-inmersion-en-las-imagenes-mas-simbolicas-y-claves-de-las-peliculas-mexicanas-fotografiadas-por-gabriel-figueroa-acompanadas-por-las-voces-en-off-de-los-40-cinematografos-mas-importantes-del-mundo-1/img_slide_cinesecuencias.jpg
-- ? <p>Una inmersi&oacute;n en las im&aacute;genes m&aacute;s simb&oacute;licas y
-    claves de las pel&iacute;culas mexicanas fotografiadas por Gabriel Figueroa, acompa&ntilde;adas
-    por las voces en off de los 40 cinemat&oacute;grafos m&aacute;s importantes del
-    mundo.</p>
-  : _slug: una-inmersion-en-las-imagenes-mas-simbolicas-y-claves-de-las-peliculas-mexicanas-fotografiadas-por-gabriel-figueroa-acompanadas-por-las-voces-en-off-de-los-40-cinematografos-mas-importantes-del-mundo-2
-    titulo: MIRADAS MÚLTIPLES 3
+- MIRADAS MÚLTIPLES 3:
+    _slug: una-inmersion-en-las-imagenes-mas-simbolicas-y-claves-de-las-peliculas-mexicanas-fotografiadas-por-gabriel-figueroa-acompanadas-por-las-voces-en-off-de-los-40-cinematografos-mas-importantes-del-mundo-2
+    descripcion: <p>Una inmersi&oacute;n en las im&aacute;genes m&aacute;s simb&oacute;licas
+      y claves de las pel&iacute;culas mexicanas fotografiadas por Gabriel Figueroa,
+      acompa&ntilde;adas por las voces en off de los 40 cinemat&oacute;grafos m&aacute;s
+      importantes del mundo.</p>
     url: http://imcine-staging.herokuapp.com/
     imagen: /samples/slides/una-inmersion-en-las-imagenes-mas-simbolicas-y-claves-de-las-peliculas-mexicanas-fotografiadas-por-gabriel-figueroa-acompanadas-por-las-voces-en-off-de-los-40-cinematografos-mas-importantes-del-mundo-2/img_slide_cursos.jpg
-- ? <p>Una inmersi&oacute;n en las im&aacute;genes m&aacute;s simb&oacute;licas y
-    claves de las pel&iacute;culas mexicanas fotografiadas por Gabriel Figueroa, acompa&ntilde;adas
-    por las voces en off de los 40 cinemat&oacute;grafos m&aacute;s importantes del
-    mundo.</p>
-  : _slug: una-inmersion-en-las-imagenes-mas-simbolicas-y-claves-de-las-peliculas-mexicanas-fotografiadas-por-gabriel-figueroa-acompanadas-por-las-voces-en-off-de-los-40-cinematografos-mas-importantes-del-mundo-3
-    titulo: MIRADAS MÚLTIPLES 4
+- MIRADAS MÚLTIPLES 4:
+    _slug: una-inmersion-en-las-imagenes-mas-simbolicas-y-claves-de-las-peliculas-mexicanas-fotografiadas-por-gabriel-figueroa-acompanadas-por-las-voces-en-off-de-los-40-cinematografos-mas-importantes-del-mundo-3
+    descripcion: <p>Una inmersi&oacute;n en las im&aacute;genes m&aacute;s simb&oacute;licas
+      y claves de las pel&iacute;culas mexicanas fotografiadas por Gabriel Figueroa,
+      acompa&ntilde;adas por las voces en off de los 40 cinemat&oacute;grafos m&aacute;s
+      importantes del mundo.</p>
     url: http://imcine-staging.herokuapp.com/estimulos-y-apoyos/convocatorias
     imagen: /samples/slides/una-inmersion-en-las-imagenes-mas-simbolicas-y-claves-de-las-peliculas-mexicanas-fotografiadas-por-gabriel-figueroa-acompanadas-por-las-voces-en-off-de-los-40-cinematografos-mas-importantes-del-mundo-3/img_slide_estadisticas.jpg

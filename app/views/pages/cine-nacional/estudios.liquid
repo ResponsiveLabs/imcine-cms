@@ -79,22 +79,11 @@ editable_elements:
                   </script>    
                 </div><!--close row col-12 share-->
             </div>
-            <div class="col-12 convocatorias-info">
-              <div class="pull-left">
-                <img src="{{ 'anuario.jpg' | theme_image_url }}" class="img">
-              </div>
-			  <div class="pull-right">
-                <ul class="ver-descargar">
-                  <li><a href="#"><img src="{{ 'ver-publicaciones.png' | theme_image_url }}" class="img"></a></li>
-                  <li><a href="#"><img src="{{ 'descargar-publicaciones.png' | theme_image_url }}" class="img"></a></li>
-                </ul>
-              </div>
-              <div class="contenido-conv">
-                <strong><h3>Anuario Estadístico de Cine Mexicano 2011</h3></strong>
-                <small>Consejo Nacional Para la Cultura y las Artes, Instituto Mexicano de Cinematografía y Área de
-                      Investigación Estratégica. Análisis y Prospectiva 2012.</small>
-              </div>
-            </div>
+            
+            <!-- Listado estudios -->
+              {% include 'listado-estudios' %}
+            <!-- Fin listado estudios -->
+              
             <center><img src="{{ 'ocupado.jpg' | theme_image_url }}" class="img"></center>
           </div>
           

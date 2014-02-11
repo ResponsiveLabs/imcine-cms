@@ -1,20 +1,16 @@
 <div class="row slider2">
-  <h4>NOTICIAS</h4>
-   <div id="bx-pager1">
-    {% for i in (1..contents.noticias.count) %}
-    	<a data-slide-index="{{i-1}}" href="#">{{ i }}</a>
-	{% endfor %}
-  </div> 
-  <ul id="slider1">
-    {% for slide in contents.noticias %}
-    <li>
-      <img src="{{ slide.imagen_destacada_url }}" class="img">
-      <div class="bx-wrapper bx-caption" id="slider3">
-        <h5>{{ slide.titulo }}</h5>
-        <p>{{ slide.descripcion }}</p>
-        <div id="ver-caption"><a href="{{ i }}">VER</a></div>
-      </div> 
-    </li>
-    {% endfor %}
-  </ul>                        
+   
+  <div id="featured-noticias">
+   {% for slide in contents.noticias %}
+    <img src="{{ slide.imagen_destacada_url }}" class="img" data-caption="#desc1">
+   
+  
+
+  <!-- Captions for Orbit -->
+  <span class="orbit-caption" style="color: #ffffff; text-align: left;" id="desc1">
+    <strong>{{ slide.titulo }}</strong>
+    <br>{{ slide.descripcion }}
+  </span>
+  {% endfor %}
+    </div>
 </div>

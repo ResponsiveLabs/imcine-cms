@@ -1,0 +1,25 @@
+---
+name: Marca
+slug: marca
+label_field_name: nombre
+order_by: nombre
+order_direction: asc
+fields:
+- nombre:
+    label: Nombre
+    type: string
+    required: true
+    unique: false
+    localized: false
+- url:
+    label: URL
+    type: string
+    required: false
+    unique: false
+    localized: false
+- logotipo:
+    label: Logotipo
+    type: file
+    required: false
+    unique: false
+    localized: false
